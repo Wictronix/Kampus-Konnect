@@ -1319,11 +1319,12 @@ body.loaded .preloader {
 }
 .header {
   position: absolute;
-  top: 140vh;
+  top: 87.5vh;
   z-index: 100;
   background-color: transparent;
-  padding: 3.6rem 0 5rem 0;
+  padding: 2.5rem 0 2.5rem 0;
   width: 100%;
+  background-color: transparent;
 }
 .header__wrapper {
   display: -webkit-box;
@@ -1518,17 +1519,11 @@ body.loaded .preloader {
     padding: 0 4rem;
   }
 }
-.header.fixedup {
+.header.fixed {
   position: fixed;
   top: 0;
-  background-color: pink;
+  background-color: white;
 }
-.header.fixeddown {
-  position: fixed;
-  top: 650px;
-  background-color: pink;
-}
-
 @media (max-width: 991.98px) {
   .header__wrapper {
     -webkit-box-pack: justify;
@@ -1620,29 +1615,19 @@ body.loaded .preloader {
   }
 }
 .header-2 {
-  top: 0;
-  padding: 4rem 0 4rem 0;
-  background-color: white;
+  top: 87.5vh;
+  padding: 2.5rem 0 2.5rem 0;
+  background-color: transparent;
 }
 @media (max-width: 991.98px) {
   .header-2 .header__nav {
     top: 0;
   }
 }
-.header-2.fixedup {
+.header-2.fixed {
   position: fixed;
   top: 0;
-  background-color: pink;
-}
-.header-2.fixeddown {
-  position: fixed;
-  top: 650px;
-  background-color: pink;
-}
-.header-2.movable {
-  position: absolute;
-  top: 650px;
-  background-color: pink;
+  background-color: white;
 }
 .customize-support .header {
   top: 8rem;
@@ -1658,7 +1643,7 @@ body.loaded .preloader {
   width: calc(100% - 10rem);
   margin: 0 auto;
   border-radius: 3rem;
-  padding: 18.4rem 0 9.9rem 0;
+  padding: 5rem 0 9.5rem 0;
 }
 .hero .main-heading {
   font-size: 8rem;
@@ -1688,8 +1673,8 @@ body.loaded .preloader {
   content: "";
   display: block;
   position: absolute;
-  width: 75.3rem;
-  height: 75.3rem;
+  width: 60rem;
+  height: 60rem;
   border-radius: 50%;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -1711,6 +1696,10 @@ body.loaded .preloader {
   animation-duration: 2.5s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+}
+.hero_img {
+  height: 80vh;
+  margin-right: 7.5vw;
 }
 @media (min-width: 991.98px) and (max-width: 1200px) {
   .hero__wrapper {
@@ -1826,7 +1815,7 @@ body.loaded .preloader {
   }
 }
 .hero-2 .hero__wrapper {
-  padding: 10rem 0;
+  padding: 5rem 0 9.5rem 0;
 }
 .feature {
   width: 100vw;

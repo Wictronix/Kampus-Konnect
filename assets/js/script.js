@@ -63,33 +63,20 @@ $(document).on("click", 'a[href^="#"]', function (event) {
     "swing"
   );
 });
-
 $(window).on("scroll", () => {
-  if ($(window).scrollTop() <= 700) {
-    $(".header-1").removeClass("fixedup");
-    $(".header-1").addClass("fixeddown");
+  if ($(window).scrollTop() <= 640) {
+    $(".header-1").removeClass("fixed");
   } else {
-    $(".header-1").addClass("fixedup");
-    $(".header-1").removeClass("fixeddown");
+    $(".header-1").addClass("fixed");
   }
 });
-
 $(window).on("scroll", () => {
-  if ($(window).scrollTop() >= 0 && $(window).scrollTop() <= 650) {
-    $(".header-2").addClass("movable");
-    $(".header-2").removeClass("fixedup");
-    $(".header-2").removeClass("fixeddown");
-  } else if ($(window).scrollTop() > 650) {
-    $(".header-2").addClass("fixedup");
-    $(".header-2").removeClass("fixeddown");
-    $(".header-2").removeClass("movable");
+  if ($(window).scrollTop() <= 640) {
+    $(".header-2").removeClass("fixed");
   } else {
-    $(".header-2").removeClass("movable");
-    $(".header-2").removeClass("fixedup");
-    $(".header-2").addClass("fixeddown");
+    $(".header-2").addClass("fixed");
   }
 });
-
 /********************
 testimonial
 ********************/
