@@ -1319,12 +1319,12 @@ body.loaded .preloader {
 }
 .header {
   position: absolute;
-  top: 87.5vh;
+  top: 90vh;
   z-index: 100;
   background-color: transparent;
-  padding: 2.5rem 0 2.5rem 0;
+  padding: 1rem 0 1rem 0;
   width: 100%;
-  background-color: transparent;
+  background-color: white;
 }
 .header__wrapper {
   display: -webkit-box;
