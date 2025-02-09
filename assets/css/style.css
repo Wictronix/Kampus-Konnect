@@ -1319,7 +1319,7 @@ body.loaded .preloader {
 }
 .header {
   position: absolute;
-  top: 90vh;
+  top: 93vh;
   z-index: 100;
   background-color: transparent;
   padding: 1rem 0 1rem 0;
@@ -1345,9 +1345,6 @@ body.loaded .preloader {
 .header__nav-primary > li {
   list-style: none;
   display: inline-block;
-}
-.header__nav-primary > li:first-child a {
-  color: #f41976;
 }
 .header__nav-primary > li:first-child i::before {
   opacity: var(--var-primary-opacity, 0.5);
@@ -1701,6 +1698,20 @@ body.loaded .preloader {
   height: 80vh;
   margin-right: 7.5vw;
 }
+.hero-text-animation {
+  animation: fade-text 3s ease-in-out infinite;
+}
+@keyframes fade-text {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  33%,
+  66% {
+    opacity: 0;
+  }
+}
+
 @media (min-width: 991.98px) and (max-width: 1200px) {
   .hero__wrapper {
     padding: 18.4rem 1rem 9.9rem 1rem;

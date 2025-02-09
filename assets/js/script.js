@@ -64,7 +64,7 @@ $(document).on("click", 'a[href^="#"]', function (event) {
   );
 });
 $(window).on("scroll", () => {
-  if ($(window).scrollTop() <= 640) {
+  if ($(window).scrollTop() <= 675) {
     $(".header-1").removeClass("fixed");
   } else {
     $(".header-1").addClass("fixed");
@@ -219,6 +219,8 @@ $(".nav__dropdown-info").on("click", (e) => {
   let parentId = $(e.target).closest("li").attr("id");
   $(`#${parentId} > .nav__dropdown-box`).toggleClass("shown");
 });
+
+
 
 /********************
 youtube defer
