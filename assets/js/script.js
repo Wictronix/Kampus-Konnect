@@ -64,7 +64,7 @@ $(document).on("click", 'a[href^="#"]', function (event) {
   );
 });
 $(window).on("scroll", () => {
-  if ($(window).scrollTop() <= 670) {
+  if ($(window).scrollTop() <= 675) {
     $(".header-1").removeClass("fixed");
   } else {
     $(".header-1").addClass("fixed");
@@ -77,41 +77,6 @@ $(window).on("scroll", () => {
     $(".header-2").addClass("fixed");
   }
 });
-$(window).on("scroll", () => {
-  if ($(window).scrollTop() >= 800) {
-    $(".header-cta").addClass("demo-highlight");
-  } else {
-    $(".header-cta").removeClass("demo-highlight");
-  }
-});
-
-/********************
-Hero
-********************/
-const dynamic_text = [
-  "Timetable Automation",
-  "Smart Information Hub",
-  "Future-Ready Education",
-  "Personal AI Tutor",
-  "Seamless Administration",
-  "Campus Management",
-];
-
-let index = 0;
-setInterval(() => {
-  document.getElementById("hero-dynamic-text").classList.remove("text-appear");
-  document.getElementById("hero-dynamic-text").classList.add("text-disappear");
-  setTimeout(() => {
-    document
-      .getElementById("hero-dynamic-text")
-      .classList.remove("text-disappear");
-    index = (index + 1) % dynamic_text.length;
-    document.getElementById("hero-dynamic-text").textContent =
-      dynamic_text[index];
-    document.getElementById("hero-dynamic-text").classList.add("text-appear");
-  }, 250);
-}, 2000);
-
 /********************
 testimonial
 ********************/
@@ -254,6 +219,8 @@ $(".nav__dropdown-info").on("click", (e) => {
   let parentId = $(e.target).closest("li").attr("id");
   $(`#${parentId} > .nav__dropdown-box`).toggleClass("shown");
 });
+
+
 
 /********************
 youtube defer
