@@ -38,7 +38,7 @@
   <body>
     <!--preloader start-->
     <div class="preloader">
-      <img src="assets/images/loading-logo.png" alt="image" />
+      <img src="assets/images/logo.png" alt="image" width="400" />
     </div>
     <!--preloader end-->
 
@@ -48,7 +48,7 @@
         <div class="header__wrapper">
           <div class="header__logo">
             <a href="index.html">
-              <img src="assets/images/footer-logo.png" alt="logo" />
+              <img src="assets/images/logo.png" alt="logo" width="40" />
             </a>
           </div>
           <div class="header__nav">
@@ -56,8 +56,8 @@
               <li><a href="#feature">Features</a></li>
               <li><a href="#faq">FAQs</a></li>
               <li><a href="#pricing">Pricing</a></li>
-              <li class="nav__dropdown dropdown-wrapper" id="menu-2">
-                <a href="#" class="nav__dropdown-info dropdown-info"> Demo </a>
+              <li>
+                <a href="#step" class="header-imp"> Demo </a>
               </li>
               <li><a href="#pricing">Pilot Project</a></li>
             </ul>
@@ -75,46 +75,19 @@
 
     <!--hero section start-->
     <section class="hero">
-      <div class="hero__wrapper">
-        <div class="container">
-          <div class="row align-items-lg-center">
-            <div class="col-lg-6 order-2 order-lg-1">
-              <h1 class="main-heading color-black">
-                🚀 Transform Institution with AI
-              </h1>
-              <p class="paragraph hero-text-animation">
-                🔄 Campus Management
-              </p>
-              <div class="download-buttons">
-                <a href="#" class="google-play">
-                  <i class="fab fa-google-play"></i>
-                  <div class="button-content">
-                    <h6>GET IT ON <span>Google Play</span></h6>
-                  </div>
-                </a>
-                <a href="#" class="apple-store">
-                  <i class="fab fa-apple"></i>
-                  <div class="button-content">
-                    <h6>GET IT ON <span>Apple Store</span></h6>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-6 order-1 order-lg-2">
-              <div class="questions-img hero-img">
-                <img
-                  src="assets/images/phone-01.png"
-                  alt="image"
-                  class="hero_img"
-                />
-              </div>
-            </div>
-          </div>
+      <div class="hero__wrapper d-flex flex-column align-items-center">
+        <img src="/assets/images/logo.png" width="250" />
+        <p class="hero-title">Kampus-Konnect</p>
+        <div class="hero-content d-flex flex-row">
+          <p>Transform Institution with AI-Powered</p>
+          <p id="hero-dynamic-text">Campus Management</p>
         </div>
+        <div class="hero-cta">Schedule a Free Demo</div>
       </div>
     </section>
     <!--hero section end-->
     <!--feature section start-->
+    <!--
     <section class="feature" id="intro">
       <div class="container">
         <h2 class="section-heading color-black">
@@ -187,11 +160,11 @@
           </div>
         </div>
       </div>
-    </section>
+    </section>-->
     <!--feature section end-->
 
     <!--video section start-->
-    <div class="video" id="video">
+    <!--<div class="video" id="video">
       <div class="video__wrapper">
         <div class="container">
           <div class="video__play">
@@ -242,27 +215,93 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>-->
     <!--video section end-->
-
+    <!--screenshot section start-->
+    <section class="screenshot" id="preview">
+      <div class="screenshot__wrapper">
+        <div class="container">
+          <div class="screenshot__info">
+            <h2 class="section-heading color-black">
+              The Super App Built for Universities
+            </h2>
+            <div class="screenshot-nav">
+              <div class="screenshot-nav-prev">
+                <i class="fad fa-long-arrow-left"></i>
+              </div>
+              <div class="screenshot-nav-next">
+                <i class="fad fa-long-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="screenshot-subheading">
+          Eliminate <b>manual inefficiencies</b> and
+          <b>fragmented systems</b>—KampusKonnect
+          <b>automates, optimizes and transforms</b> how institutions operate.It
+          can be used by k-12, universities and colleges.
+        </div>
+        <div class="screenshot-subheading-2"><b>Demo of our App</b></div>
+        <div class="swiper-container screenshot-slider">
+          <div class="screenshot-text-left"></div>
+          <div class="screenshot-text-right"></div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide screenshot-slide">
+              <img src="assets/images/demo-1-home.jpg" alt="image" />
+            </div>
+            <div class="swiper-slide screenshot-slide">
+              <img src="assets/images/demo-2-timetable.jpg" alt="image" />
+            </div>
+            <div class="swiper-slide screenshot-slide">
+              <img src="assets/images/demo-3-classes.jpg" alt="image" />
+            </div>
+            <div class="swiper-slide screenshot-slide">
+              <img src="assets/images/demo-4-calendar.jpg" alt="image" />
+            </div>
+            <div class="swiper-slide screenshot-slide">
+              <img src="assets/images/demo-5-groups.jpg" alt="image" />
+            </div>
+            <div class="swiper-slide screenshot-slide">
+              <img
+                src="assets/images/demo-6-complaint-resolution.jpg"
+                alt="image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--screenshot section end-->
     <!--growth section start-->
     <section class="growth" id="feature">
       <div class="growth__wrapper">
         <div class="container">
           <h2 class="section-heading color-black">
-            App that assists exponential growth.
+            Powerful Features, Trusted by Institutions
           </h2>
           <div class="row">
             <div class="col-lg-6">
               <div class="growth__box">
-                <div class="icon">
-                  <i class="fad fa-user-astronaut"></i>
-                </div>
+                <div class="icon"><i class="fas fa-chalkboard"></i></div>
                 <div class="content">
-                  <h3>Start Easily</h3>
+                  <h3>Classes</h3>
+                  <h4 class="hidden-text">Everything in One Place</h4>
                   <p class="paragraph dark">
-                    Auisque metus tortor ultricies ac ligula neced eleifend
-                    sodales felise.
+                    Access attendance, chats, attachments, assignments, and
+                    syllabus for every subject in a single, organized view.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="growth__box">
+                <div class="icon"><i class="fad fa-calendar"></i></div>
+                <div class="content">
+                  <h3>Calendar</h3>
+                  <h4 class="hidden-text">Stay Updated, Always</h4>
+                  <p class="paragraph dark">
+                    All university events, holidays, and academic schedules are
+                    seamlessly integrated, ensuring no missed deadlines.
                   </p>
                 </div>
               </div>
@@ -270,13 +309,28 @@
             <div class="col-lg-6">
               <div class="growth__box">
                 <div class="icon">
-                  <i class="fad fa-lightbulb-on"></i>
+                  <i class="far fa-info-circle"></i>
                 </div>
                 <div class="content">
-                  <h3>Improve Growth</h3>
+                  <h3>Information Portal</h3>
+                  <h4 class="hidden-text">Instant Access to Key Updates</h4>
                   <p class="paragraph dark">
-                    Kuisque metus tortor ultricies ac ligula neced eleifend
-                    sodales felise.
+                    Get real-time updates on university events, holidays, and
+                    academic calendars—all in one central hub.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="growth__box">
+                <div class="icon"><i class="fas fa-tools"></i></div>
+                <div class="content">
+                  <h3>Tools</h3>
+                  <h4 class="hidden-text">Essential Campus Utilities</h4>
+                  <p class="paragraph dark">
+                    From Resume/CV Maker and Location Finder to Public
+                    Transport, Emergency Help, and even a Dustbin Locator—all
+                    the tools students need, in one place.
                   </p>
                 </div>
               </div>
@@ -284,13 +338,42 @@
             <div class="col-lg-6">
               <div class="growth__box">
                 <div class="icon">
-                  <i class="fad fa-solar-system"></i>
+                  <i class="fas fa-user-graduate"></i>
                 </div>
                 <div class="content">
-                  <h3>Create Algorithms</h3>
+                  <h3>Alumni & Content Building</h3>
+                  <h4 class="hidden-text">
+                    Stronger Connections, Brighter Opportunities
+                  </h4>
                   <p class="paragraph dark">
-                    Nuisque metus tortor ultricies ac ligula neced eleifend
-                    sodales felise.
+                    Stay connected with alumni for networking, mentorship,
+                    funding, and career opportunities.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="growth__box">
+                <div class="icon"><i class="fas fa-calendar-check"></i></div>
+                <div class="content">
+                  <h3>Timetable Automation</h3>
+                  <h4 class="hidden-text">Hassle-Free Scheduling</h4>
+                  <p class="paragraph dark">
+                    Automatically managed via the admin panel, ensuring
+                    error-free, optimized timetables.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="growth__box">
+                <div class="icon"><i class="fas fa-user-check"></i></div>
+                <div class="content">
+                  <h3>Attendance & Result Tracking</h3>
+                  <h4 class="hidden-text">Real-Time Performance Insights</h4>
+                  <p class="paragraph dark">
+                    Students can check subject-wise attendance and semester-wise
+                    results at a glance.
                   </p>
                 </div>
               </div>
@@ -298,41 +381,15 @@
             <div class="col-lg-6">
               <div class="growth__box">
                 <div class="icon">
-                  <i class="fad fa-backpack"></i>
+                  <i class="fas fa-headset"></i>
                 </div>
                 <div class="content">
-                  <h3>Expand Portfolio</h3>
+                  <h3>Complaint Resolution System</h3>
+                  <h4 class="hidden-text">AI-Powered Grievance Management</h4>
                   <p class="paragraph dark">
-                    Euisque metus tortor ultricies ac ligula neced eleifend
-                    sodales felise.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="growth__box">
-                <div class="icon">
-                  <i class="fad fa-rocket-launch"></i>
-                </div>
-                <div class="content">
-                  <h3>Share Statistics</h3>
-                  <p class="paragraph dark">
-                    Buisque metus tortor ultricies ac ligula neced eleifend
-                    sodales felise.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="growth__box">
-                <div class="icon">
-                  <i class="fad fa-user-astronaut"></i>
-                </div>
-                <div class="content">
-                  <h3>Measure Results</h3>
-                  <p class="paragraph dark">
-                    Suisque metus tortor ultricies ac ligula neced eleifend
-                    sodales felise.
+                    A structured, efficient feedback and complaint resolution
+                    system that ensures concerns are addressed transparently and
+                    swiftly.
                   </p>
                 </div>
               </div>
@@ -343,7 +400,7 @@
               <a href="#" class="button">
                 <span>GET STARTED <i class="fad fa-long-arrow-right"></i></span>
               </a>
-              <a href="#" class="button">
+              <a href="#" class="button" id="learnMoreBtn">
                 <span>LEARN MORE <i class="fad fa-long-arrow-right"></i></span>
               </a>
             </div>
@@ -352,53 +409,168 @@
       </div>
     </section>
     <!--growth section end-->
-
+    <!-- Pop-up section begins-->
+    <div id="featureModal" class="modal">
+      <div class="modal-content">
+        <div class="close">&times;</div>
+        <h2 class="section-heading color-black">
+          Powerful Features, Trusted by Institutions
+        </h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="growth__box">
+              <div class="icon"><i class="fas fa-chalkboard"></i></div>
+              <div class="content">
+                <h3>Classes</h3>
+                <h4>Everything in One Place</h4>
+                <p class="paragraph dark">
+                  Access attendance, chats, attachments, assignments, and
+                  syllabus for every subject in a single, organized view.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="growth__box">
+              <div class="icon"><i class="fad fa-calendar"></i></div>
+              <div class="content">
+                <h3>Calendar</h3>
+                <h4>Stay Updated, Always</h4>
+                <p class="paragraph dark">
+                  All university events, holidays, and academic schedules are
+                  seamlessly integrated, ensuring no missed deadlines.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="growth__box">
+              <div class="icon">
+                <i class="far fa-info-circle"></i>
+              </div>
+              <div class="content">
+                <h3>Information Portal</h3>
+                <h4>Instant Access to Key Updates</h4>
+                <p class="paragraph dark">
+                  Get real-time updates on university events, holidays, and
+                  academic calendars—all in one central hub.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="growth__box">
+              <div class="icon"><i class="fas fa-tools"></i></div>
+              <div class="content">
+                <h3>Tools</h3>
+                <h4>Essential Campus Utilities</h4>
+                <p class="paragraph dark">
+                  From Resume/CV Maker and Location Finder to Public Transport,
+                  Emergency Help, and even a Dustbin Locator—all the tools
+                  students need, in one place.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="growth__box">
+              <div class="icon">
+                <i class="fas fa-user-graduate"></i>
+              </div>
+              <div class="content">
+                <h3>Alumni & Content Building</h3>
+                <h4>Stronger Connections, Brighter Opportunities</h4>
+                <p class="paragraph dark">
+                  Stay connected with alumni for networking, mentorship,
+                  funding, and career opportunities.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="growth__box">
+              <div class="icon"><i class="fas fa-calendar-check"></i></div>
+              <div class="content">
+                <h3>Timetable Automation</h3>
+                <h4>Hassle-Free Scheduling</h4>
+                <p class="paragraph dark">
+                  Automatically managed via the admin panel, ensuring
+                  error-free, optimized timetables.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="growth__box">
+              <div class="icon"><i class="fas fa-user-check"></i></div>
+              <div class="content">
+                <h3>Attendance & Result Tracking</h3>
+                <h4>Real-Time Performance Insights</h4>
+                <p class="paragraph dark">
+                  Students can check subject-wise attendance and semester-wise
+                  results at a glance.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="growth__box">
+              <div class="icon">
+                <i class="fas fa-headset"></i>
+              </div>
+              <div class="content">
+                <h3>Complaint Resolution System</h3>
+                <h4>AI-Powered Grievance Management</h4>
+                <p class="paragraph dark">
+                  A structured, efficient feedback and complaint resolution
+                  system that ensures concerns are addressed transparently and
+                  swiftly.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Pop-up section ends-->
     <!--step section start-->
-    <section class="step">
+    <section class="step" id="step">
       <div class="step__wrapper">
         <div class="container">
           <h2 class="section-heading color-black">
-            Jumpstart your growth in just few clicks.
+            Effortless Onboarding in 3 Simple Steps
           </h2>
           <div class="row">
             <div class="col-lg-4">
               <div class="step__box">
-                <div class="image">
-                  <img src="assets/images/phone-01.png" alt="image" />
-                </div>
                 <div class="content">
-                  <h3>EASY TO<span>Register.</span></h3>
+                  <h3>Connect With Us</h3>
                   <p class="paragraph dark">
-                    Join the app in 3 easy steps and get started with your
-                    progresso daily.
+                    Tell us your needs, and our team will personally guide you
+                    through KampusKonnect.
                   </p>
                 </div>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="step__box">
-                <div class="image">
-                  <img src="assets/images/phone-02.png" alt="image" />
-                </div>
                 <div class="content">
-                  <h3>SIMPLE TO<span>Create.</span></h3>
+                  <h3>We Customize & Set It Up</h3>
                   <p class="paragraph dark">
-                    Once you’re signed up you can create as many polls you want
-                    to watch.
+                    From <b>timetables to attendance and integrations</b>, we
+                    tailor everything for your institution.
                   </p>
                 </div>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="step__box">
-                <div class="image">
-                  <img src="assets/images/phone-03.png" alt="image" />
-                </div>
                 <div class="content">
-                  <h3>FUN TO<span>Measure.</span></h3>
+                  <h3>Seamless Deployment & Support</h3>
                   <p class="paragraph dark">
-                    Share your growth results with your friends and inspre
-                    others.
+                    We seamlessly deploy KampusKonnect for your institution and
+                    provide <b>end-to-end support and training</b> for a smooth
+                    transition.
                   </p>
                 </div>
               </div>
@@ -420,6 +592,7 @@
     <!--step section end-->
 
     <!--client section start-->
+    <!--
     <section class="clients-sec" id="feedback">
       <div class="container">
         <h2 class="section-heading color-black">
@@ -520,7 +693,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section>-->
     <!--client section end-->
 
     <!--questions section start-->
@@ -543,7 +716,8 @@
                         aria-expanded="true"
                         aria-controls="collapse-1"
                       >
-                        How does algorithms work?
+                        How long does it take to set up KampusKonnect for our
+                        institution?
                       </button>
                     </h5>
                   </div>
@@ -556,11 +730,9 @@
                   >
                     <div class="card-body">
                       <p class="paragraph">
-                        With increasing calls for government accountability and
-                        cost savings, agencies are contending with a mountain of
-                        rule and policy changes affecting everything from
-                        pensions and benefits, to client eligibility and
-                        oversight.
+                        We handle everything for you! Setup time depends on
+                        customization needs, but most institutions are up and
+                        running <b>within a few days to a couple of weeks</b>.
                       </p>
                     </div>
                   </div>
@@ -575,7 +747,7 @@
                         aria-expanded="false"
                         aria-controls="collapse-2"
                       >
-                        What is a business rules engine?
+                        Is KampusKonnect compatible with our existing systems?
                       </button>
                     </h5>
                   </div>
@@ -587,11 +759,9 @@
                   >
                     <div class="card-body">
                       <p class="paragraph">
-                        With increasing calls for government accountability and
-                        cost savings, agencies are contending with a mountain of
-                        rule and policy changes affecting everything from
-                        pensions and benefits, to client eligibility and
-                        oversight.
+                        Yes! We offer <b>seamless integration</b> with your
+                        current student management, attendance, and
+                        communication systems to ensure a smooth transition.
                       </p>
                     </div>
                   </div>
@@ -606,7 +776,7 @@
                         aria-expanded="false"
                         aria-controls="collapse-3"
                       >
-                        How are datadirect drivers different?
+                        What kind of support do you provide after deployment?
                       </button>
                     </h5>
                   </div>
@@ -618,135 +788,13 @@
                   >
                     <div class="card-body">
                       <p class="paragraph">
-                        With increasing calls for government accountability and
-                        cost savings, agencies are contending with a mountain of
-                        rule and policy changes affecting everything from
-                        pensions and benefits, to client eligibility and
-                        oversight.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="card" id="card-4">
-                  <div class="card-header" id="heading-4">
-                    <h5 class="mb-0 hidden">
-                      <button
-                        class="btn btn-link collapsed"
-                        data-toggle="collapse"
-                        data-target="#collapse-4"
-                        aria-expanded="false"
-                        aria-controls="collapse-4"
-                      >
-                        How do determine agencies compliance?
-                      </button>
-                    </h5>
-                  </div>
-                  <div
-                    id="collapse-4"
-                    class="collapse"
-                    aria-labelledby="heading-4"
-                    data-parent="#accordion"
-                  >
-                    <div class="card-body">
-                      <p class="paragraph">
-                        With increasing calls for government accountability and
-                        cost savings, agencies are contending with a mountain of
-                        rule and policy changes affecting everything from
-                        pensions and benefits, to client eligibility and
-                        oversight.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="card" id="card-5">
-                  <div class="card-header" id="heading-5">
-                    <h5 class="mb-0 hidden">
-                      <button
-                        class="btn btn-link collapsed"
-                        data-toggle="collapse"
-                        data-target="#collapse-5"
-                        aria-expanded="false"
-                        aria-controls="collapse-5"
-                      >
-                        How are datadirect drivers different?
-                      </button>
-                    </h5>
-                  </div>
-                  <div
-                    id="collapse-5"
-                    class="collapse"
-                    aria-labelledby="heading-5"
-                    data-parent="#accordion"
-                  >
-                    <div class="card-body">
-                      <p class="paragraph">
-                        With increasing calls for government accountability and
-                        cost savings, agencies are contending with a mountain of
-                        rule and policy changes affecting everything from
-                        pensions and benefits, to client eligibility and
-                        oversight.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="card" id="card-6">
-                  <div class="card-header" id="heading-6">
-                    <h5 class="mb-0 hidden">
-                      <button
-                        class="btn btn-link collapsed"
-                        data-toggle="collapse"
-                        data-target="#collapse-6"
-                        aria-expanded="false"
-                        aria-controls="collapse-6"
-                      >
-                        What is a business rules engine?
-                      </button>
-                    </h5>
-                  </div>
-                  <div
-                    id="collapse-6"
-                    class="collapse"
-                    aria-labelledby="heading-6"
-                    data-parent="#accordion"
-                  >
-                    <div class="card-body">
-                      <p class="paragraph">
-                        With increasing calls for government accountability and
-                        cost savings, agencies are contending with a mountain of
-                        rule and policy changes affecting everything from
-                        pensions and benefits, to client eligibility and
-                        oversight.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="card" id="card-7">
-                  <div class="card-header" id="heading-7">
-                    <h5 class="mb-0 hidden">
-                      <button
-                        class="btn btn-link collapsed"
-                        data-toggle="collapse"
-                        data-target="#collapse-7"
-                        aria-expanded="false"
-                        aria-controls="collapse-7"
-                      >
-                        What are the types of datadirect drivers?
-                      </button>
-                    </h5>
-                  </div>
-                  <div
-                    id="collapse-7"
-                    class="collapse"
-                    aria-labelledby="heading-7"
-                    data-parent="#accordion"
-                  >
-                    <div class="card-body">
-                      <p class="paragraph">
-                        With increasing calls for government accountability and
-                        cost savings, agencies are contending with a mountain of
-                        rule and policy changes affecting everything from
-                        pensions and benefits, to client eligibility and
-                        oversight.
+                        Our team offers
+                        <b
+                          >full training, 24/7 assistance, and ongoing
+                          updates</b
+                        >
+                        to ensure your institution gets the best experience with
+                        KampusKonnect.
                       </p>
                     </div>
                   </div>
@@ -755,7 +803,7 @@
             </div>
             <div class="col-lg-6 order-1 order-lg-2">
               <div class="questions-img">
-                <img src="assets/images/phone-01.png" alt="image" />
+                <img src="assets/images/home.jpg" alt="image" />
               </div>
             </div>
           </div>
@@ -768,26 +816,37 @@
     <section class="pricing" id="pricing">
       <div class="pricing__wrapper">
         <h2 class="section-heading color-black">
-          Easy pricing plans for your needs.
+          Flexible Pricing Plans – Scalable for Every Institution
         </h2>
         <div class="container">
           <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5">
               <div class="pricing__single pricing__single-1">
                 <div class="icon">
                   <i class="fad fa-user-graduate"></i>
                 </div>
-                <h4>LEARNER</h4>
-                <h3>$0.00</h3>
-                <h6>1 to 2 users</h6>
+                <h4>STANDARD</h4>
+                <h3>₹ 99 per student/month</h3>
                 <div class="list">
                   <ul>
-                    <li>20 polls per month</li>
-                    <li>1 email address</li>
-                    <li>2GB cloud storage</li>
-                    <li class="not-included">No customer support</li>
-                    <li class="not-included">Extra features</li>
-                    <li class="not-included">In-app products</li>
+                    <li>
+                      Campus Management (Attendance, Timetable, Calendar,
+                      Complaints)
+                    </li>
+                    <li>Student & Faculty Collaboration</li>
+                    <li>AI-Powered Timetable Automation</li>
+                    <li>Basic Analytics & Reporting</li>
+                    <li class="not-included">
+                      Advanced Data Analytics & Real-Time Tracking
+                    </li>
+                    <li class="not-included">Alumni & Community Networking</li>
+                    <li class="not-included">
+                      Full Customization & API Integrations
+                    </li>
+                    <li class="not-included">
+                      Priority Support & Dedicated Account Manager
+                    </li>
                   </ul>
                 </div>
                 <a href="#" class="button">
@@ -797,47 +856,27 @@
                 </a>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5">
               <div class="pricing__single pricing__single-2">
                 <div class="icon">
                   <i class="fad fa-user-cowboy"></i>
                 </div>
-                <h4>COWBOY</h4>
-                <h3>$10.00</h3>
-                <h6>3 to 19 users</h6>
+                <h4>PREMIUM</h4>
+                <h3>₹ 139 per student/month</h3>
                 <div class="list">
                   <ul>
-                    <li>20 polls per month</li>
-                    <li>1 email address</li>
-                    <li>2GB cloud storage</li>
-                    <li>No customer support</li>
-                    <li class="not-included">Extra features</li>
-                    <li class="not-included">In-app products</li>
-                  </ul>
-                </div>
-                <a href="#" class="button">
-                  <span
-                    >GET STARTED <i class="fad fa-long-arrow-right"></i
-                  ></span>
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="pricing__single pricing__single-3">
-                <div class="icon">
-                  <i class="fad fa-user-astronaut"></i>
-                </div>
-                <h4>ASTRONAUT</h4>
-                <h3>$20.00</h3>
-                <h6>20 to 50 users</h6>
-                <div class="list">
-                  <ul>
-                    <li>20 polls per month</li>
-                    <li>1 email address</li>
-                    <li>2GB cloud storage</li>
-                    <li>No customer support</li>
-                    <li>Extra features</li>
-                    <li>In-app products</li>
+                    <li>
+                      Campus Management (Attendance, Timetable, Calendar,
+                      Complaints)
+                    </li>
+                    <li>Student & Faculty Collaboration</li>
+                    <li>AI-Powered Timetable Automation</li>
+                    <li>Basic Analytics & Reporting</li>
+                    <li>Advanced Data Analytics & Real-Time Tracking</li>
+                    <li>Alumni & Community Networking</li>
+                    <li>Full Customization & API Integrations</li>
+                    <li>Priority Support & Dedicated Account Manager</li>
                   </ul>
                 </div>
                 <a href="#" class="button">
@@ -853,48 +892,8 @@
     </section>
     <!--pricing section end-->
 
-    <!--screenshot section start-->
-    <section class="screenshot" id="preview">
-      <div class="screenshot__wrapper">
-        <div class="container">
-          <div class="screenshot__info">
-            <h2 class="section-heading color-black">
-              Have a look at what’s inside the app.
-            </h2>
-            <div class="screenshot-nav">
-              <div class="screenshot-nav-prev">
-                <i class="fad fa-long-arrow-left"></i>
-              </div>
-              <div class="screenshot-nav-next">
-                <i class="fad fa-long-arrow-right"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-container screenshot-slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide screenshot-slide">
-              <img src="assets/images/phone-01.png" alt="image" />
-            </div>
-            <div class="swiper-slide screenshot-slide">
-              <img src="assets/images/phone-02.png" alt="image" />
-            </div>
-            <div class="swiper-slide screenshot-slide">
-              <img src="assets/images/phone-03.png" alt="image" />
-            </div>
-            <div class="swiper-slide screenshot-slide">
-              <img src="assets/images/phone-04.png" alt="image" />
-            </div>
-            <div class="swiper-slide screenshot-slide">
-              <img src="assets/images/phone-05.png" alt="image" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--screenshot section end-->
-
     <!--related blog section start-->
+    <!--
     <section class="related-blog blog">
       <div class="related-blog__wrapper">
         <h2 class="section-heading color-black">
@@ -951,9 +950,11 @@
         </a>
       </div>
     </section>
+    -->
     <!--related blog section end-->
 
     <!--newsletter section start-->
+    <!--
     <section class="newsletter">
       <div class="newsletter__wrapper">
         <div class="container">
@@ -985,8 +986,36 @@
           </div>
         </div>
       </div>
-    </section>
+    </section>-->
     <!--newsletter section end-->
+
+    <section id="forms">
+      <div class="form-container">
+        <p>Join Leading Institutions Like MSUB</p>
+        <div class="form-row">
+          <div class="forms">
+            <input type="text" placeholder="Full Name" />
+            <input type="text" placeholder="Email" />
+            <input type="text" placeholder="Phone Number" />
+            <input type="text" placeholder="College" />
+            <input type="text" placeholder="Univeristy" />
+          </div>
+          <div class="form-others">
+            <div class="buttons">
+              <div class="form-button">Join Pilot Programme</div>
+              <div class="form-button">Request a Demo</div>
+            </div>
+            <div class="form-quote">
+              "Kampus-Konnect has transformed our administrative efficiency and
+              student engagement like never before. Seamless automation, easy
+              integrations, and outstanding support make it a must-have for
+              modern institutions."<br />-[MSUB Representative, Name, Position]
+            </div>
+            <img src="/assets/images/person.jpg" width="100" />
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!--footer start-->
     <footer class="footer">

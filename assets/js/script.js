@@ -64,19 +64,65 @@ $(document).on("click", 'a[href^="#"]', function (event) {
   );
 });
 $(window).on("scroll", () => {
-  if ($(window).scrollTop() <= 675) {
+  if ($(window).scrollTop() <= 670) {
     $(".header-1").removeClass("fixed");
   } else {
     $(".header-1").addClass("fixed");
   }
 });
 $(window).on("scroll", () => {
-  if ($(window).scrollTop() <= 640) {
-    $(".header-2").removeClass("fixed");
+  if ($(window).scrollTop() >= 1300) {
+    $(".header-imp").addClass("highlight");
   } else {
-    $(".header-2").addClass("fixed");
+    $(".header-imp").removeClass("highlight");
   }
 });
+/********************
+Hero
+********************/
+const dynamic_text = [
+  "Campus Management",
+  "Timetable Automation",
+  "Smart Information Hub",
+  "Future-Ready Education",
+  "Personal AI Tutor",
+  "Seamless Administration",
+];
+
+let index = 0;
+const dynamicTextElement = document.getElementById("hero-dynamic-text");
+
+function initializeDynamicTextWidth() {
+  const initialWidth = dynamicTextElement.offsetWidth;
+  dynamicTextElement.style.width = `${initialWidth}px`;
+}
+
+window.addEventListener("load", initializeDynamicTextWidth);
+
+setInterval(() => {
+  dynamicTextElement.classList.add("text-disappear");
+  setTimeout(() => {
+    const currentWidth = dynamicTextElement.offsetWidth;
+
+    index = (index + 1) % dynamic_text.length;
+    dynamicTextElement.textContent = dynamic_text[index];
+
+    const newWidth = dynamicTextElement.offsetWidth;
+
+    dynamicTextElement.style.width = `${currentWidth}px`;
+
+    dynamicTextElement.offsetHeight;
+
+    dynamicTextElement.style.width = `${newWidth}px`;
+
+    dynamicTextElement.classList.remove("text-disappear");
+    dynamicTextElement.classList.add("text-appear");
+    setTimeout(() => {
+      dynamicTextElement.style.width = "";
+    }, 500);
+  }, 500);
+}, 3000);
+
 /********************
 testimonial
 ********************/
@@ -111,6 +157,23 @@ var clients = new Swiper(".clients-slider", {
 /********************
 screenshot slider
 ********************/
+const leftTexts = [
+  "Modern",
+  "Automated",
+  "All Materials",
+  "Smart",
+  "Seamless Collaboration",
+  "AI-Powered",
+];
+
+const rightTexts = [
+  "UI",
+  "Error-Free Scheduling",
+  "in One Place",
+  "Day Planner",
+  "& Networking",
+  "Student Support",
+];
 var screenshot = new Swiper(".screenshot-slider", {
   loop: true,
   slidesPerView: 4.75,
@@ -140,7 +203,20 @@ var screenshot = new Swiper(".screenshot-slider", {
       slidesPerView: 4.75,
     },
   },
+  on: {
+    slideChange: function () {
+      // Get the active slide's index
+      const activeIndex = this.realIndex; // Use `realIndex` to handle loop mode
+
+      // Update the text in the red and blue boxes
+      document.querySelector(".screenshot-text-left").textContent =
+        leftTexts[activeIndex];
+      document.querySelector(".screenshot-text-right").textContent =
+        rightTexts[activeIndex];
+    },
+  },
 });
+screenshot.emit("slideChange");
 
 /********************
 related post slider
@@ -220,9 +296,34 @@ $(".nav__dropdown-info").on("click", (e) => {
   $(`#${parentId} > .nav__dropdown-box`).toggleClass("shown");
 });
 
-
-
 /********************
 youtube defer
 ********************/
 window.addEventListener("load", ytdefer_setup);
+
+/********************
+Pop-up
+********************/
+const modal = document.getElementById("featureModal");
+const learnMoreBtn = document.getElementById("learnMoreBtn");
+const closeBtn = document.getElementsByClassName("close")[0];
+const content = document.getElementsByClassName("hidden-text");
+
+learnMoreBtn.addEventListener("click", function () {
+  for (let i = 0; i < content.length; i++) {
+    content[i].classList.toggle("hidden");
+  }
+});
+learnMoreBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  modal.style.display = "block";
+});
+closeBtn.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+window.addEventListener("click", (event) => {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+});
