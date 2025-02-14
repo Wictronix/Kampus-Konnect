@@ -1893,6 +1893,46 @@ body {
 .hero-2 .hero__wrapper {
   padding: 5rem 0 9.5rem 0;
 }
+#about {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 10vh;
+}
+.about-heading {
+  width: 100%;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: bold;
+}
+.about-info-boxes {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: fit-content;
+  padding: 1vh 10vw;
+  gap: 5vw;
+}
+.about-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 25vw;
+  height: 25vh;
+  border-radius: 1rem;
+  background-color: white;
+  padding: 2rem;
+}
+.about-icon {
+  color: blue;
+  font-size: 5rem;
+}
+.about-value {
+  font-weight: bold;
+  font-size: 3rem;
+}
+.about-key {
+  font-size: 2rem;
+}
 .feature {
   width: 100vw;
   padding: 15rem 0;
