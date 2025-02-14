@@ -1895,8 +1895,12 @@ body {
 }
 #about {
   width: 100vw;
-  height: 100vh;
+  height: fit-content;
   padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  padding-bottom: 5vh;
 }
 .about-heading {
   width: 100%;
@@ -1907,10 +1911,11 @@ body {
 .about-info-boxes {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 80%;
   height: fit-content;
-  padding: 1vh 10vw;
+  margin: 1vh 10vw;
   gap: 5vw;
+  border-radius: 1rem;
 }
 .about-info {
   display: flex;
@@ -1932,6 +1937,29 @@ body {
 }
 .about-key {
   font-size: 2rem;
+}
+.about-info-text {
+  font-size: 2rem;
+  padding: 10vh 2vw;
+  width: 50%;
+}
+.about-info-grid-boxes {
+  display: grid;
+  grid-template-columns: repeat(2, 15vw);
+  column-gap: 5vw;
+  margin-top: 5vh;
+}
+.about-info-grid-item {
+  height: 15vh;
+  width: 100%;
+  background-color: rgb(232, 232, 250);
+  border-radius: 1rem;
+  font-size: 1.75rem;
+  padding: 1.5rem;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vh;
 }
 .feature {
   width: 100vw;
