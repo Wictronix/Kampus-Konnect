@@ -43,6 +43,7 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   overflow-x: hidden !important;
+  background-color: #b1efe3;
 }
 a {
   text-decoration: none !important;
@@ -1316,9 +1317,6 @@ body.loaded .preloader {
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
 }
-body {
-  background-color: rgb(181, 181, 240);
-}
 .header {
   position: absolute;
   top: 92vh;
@@ -1646,7 +1644,7 @@ body {
   width: 100vw;
 }
 .hero__wrapper {
-  background: linear-gradient(to bottom, blue, white);
+  background: white;
   height: 92vh;
   margin: 0 auto;
   padding: 5vh 0 0 0;
@@ -1658,7 +1656,7 @@ body {
   margin-top: 2.5vh;
 }
 .hero-content {
-  margin-top: 15vh;
+  margin-top: 5vh;
   font-size: 4rem;
   font-weight: 500;
   gap: 0.5vw;
@@ -1680,10 +1678,10 @@ body {
   }
 }
 .text-disappear {
-  animation: textDisappear 0.25s ease-out;
+  animation: textDisappear 1s ease-out forwards;
 }
 .text-appear {
-  animation: textAppear 0.25s ease-in;
+  animation: textAppear 1s ease-in forwards;
 }
 .hero-cta {
   font-weight: bold;
@@ -1908,21 +1906,37 @@ body {
   font-size: 5rem;
   font-weight: bold;
 }
-.about-info-boxes {
+.about-content {
   display: flex;
   flex-direction: row;
+}
+.about-info-boxes {
+  display: flex;
+  flex-direction: column;
   width: 80%;
   height: fit-content;
-  margin: 1vh 10vw;
+  margin: 0vh 5vw;
   gap: 5vw;
   border-radius: 1rem;
+  padding-bottom: 2.5vh;
+}
+.about-info-boxes-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 20vw);
+  width: 100%;
+  height: 62.25vh;
+  border-radius: 1rem;
+  row-gap: 6.75vh;
+  column-gap: 6.75vh;
+  padding-bottom: 2.5vh;
+  padding-top: 0vh;
 }
 .about-info {
   display: flex;
   flex-direction: column;
   align-items: start;
-  width: 25vw;
-  height: 25vh;
+  width: 20vw;
+  height: 27.5vh;
   border-radius: 1rem;
   background-color: white;
   padding: 2rem;
@@ -1936,18 +1950,20 @@ body {
   font-size: 3rem;
 }
 .about-key {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .about-info-text {
   font-size: 2rem;
-  padding: 10vh 2vw;
-  width: 50%;
+  padding: 5vh 2vw;
+  width: 100%;
 }
 .about-info-grid-boxes {
   display: grid;
   grid-template-columns: repeat(2, 15vw);
   column-gap: 5vw;
-  margin-top: 5vh;
+  row-gap: 2.5vh;
+  margin-top: 1vh;
+  padding: 0 3vw;
 }
 .about-info-grid-item {
   height: 15vh;
@@ -1959,7 +1975,7 @@ body {
   padding-top: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 0.5vh;
+  gap: 0.25vh;
 }
 .feature {
   width: 100vw;
@@ -3047,6 +3063,7 @@ body {
 .pricing__wrapper {
   width: 100%;
   padding: 10vh 0;
+  background-color: #b1efe3;
 }
 .pricing .section-heading {
   text-align: center;
@@ -3285,6 +3302,28 @@ body {
   opacity: 1;
   z-index: 2;
 }
+.clicked-left {
+  animation: screenshotTextAnimateLeft 1s ease;
+}
+.clicked-right {
+  animation: screenshotTextAnimateRight 1s ease;
+}
+@keyframes screenshotTextAnimateLeft {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: 45%;
+  }
+}
+@keyframes screenshotTextAnimateRight {
+  0% {
+    top: 90%;
+  }
+  100% {
+    top: 45%;
+  }
+}
 .screenshot-text-left {
   left: 11%;
 }
@@ -3299,7 +3338,7 @@ body {
 }
 .screenshot-slide {
   text-align: center;
-  opacity: 0.4;
+  opacity: 0;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   filter: drop-shadow(0px 20px 10px rgba(75, 80, 84, 0.4));
@@ -3616,6 +3655,7 @@ body {
   height: 100vh;
   padding-left: 10vw;
   padding-top: 10vh;
+  background-color: #b1efe3;
 }
 .form-container {
   width: 80vw;

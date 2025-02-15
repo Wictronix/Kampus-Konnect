@@ -99,29 +99,29 @@ function initializeDynamicTextWidth() {
 
 window.addEventListener("load", initializeDynamicTextWidth);
 
-setInterval(() => {
+function changeText() {
   dynamicTextElement.classList.add("text-disappear");
   setTimeout(() => {
     const currentWidth = dynamicTextElement.offsetWidth;
-
     index = (index + 1) % dynamic_text.length;
     dynamicTextElement.textContent = dynamic_text[index];
-
     const newWidth = dynamicTextElement.offsetWidth;
-
     dynamicTextElement.style.width = `${currentWidth}px`;
-
     dynamicTextElement.offsetHeight;
-
     dynamicTextElement.style.width = `${newWidth}px`;
-
     dynamicTextElement.classList.remove("text-disappear");
     dynamicTextElement.classList.add("text-appear");
     setTimeout(() => {
       dynamicTextElement.style.width = "";
-    }, 500);
-  }, 500);
-}, 3000);
+      dynamicTextElement.classList.remove("text-appear");
+    }, 1000);
+  }, 1000);
+}
+
+setTimeout(() => {
+  changeText();
+  setInterval(changeText, 4000);
+}, 500);
 
 /********************
 testimonial
@@ -205,14 +205,25 @@ var screenshot = new Swiper(".screenshot-slider", {
   },
   on: {
     slideChange: function () {
-      // Get the active slide's index
-      const activeIndex = this.realIndex; // Use `realIndex` to handle loop mode
-
-      // Update the text in the red and blue boxes
+      const activeIndex = this.realIndex;
+      document
+        .querySelector(".screenshot-text-left")
+        .classList.add("clicked-left");
+      document
+        .querySelector(".screenshot-text-right")
+        .classList.add("clicked-right");
       document.querySelector(".screenshot-text-left").textContent =
         leftTexts[activeIndex];
       document.querySelector(".screenshot-text-right").textContent =
         rightTexts[activeIndex];
+      setTimeout(() => {
+        document
+          .querySelector(".screenshot-text-left")
+          .classList.remove("clicked-left");
+        document
+          .querySelector(".screenshot-text-right")
+          .classList.remove("clicked-right");
+      }, 1000);
     },
   },
 });
