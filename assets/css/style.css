@@ -2698,25 +2698,8 @@ td i {
 }
 .step__box .content {
   margin-top: 4.5rem;
-  background-size: 100% 200% !important;
-  padding: 5vh 0;
-}
-.step__box .content h3 {
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #f41675;
-  margin-bottom: 2.5rem;
-  line-height: -4rem;
-  letter-spacing: 0.1rem;
-}
-.step__box .content h3 span {
-  display: block;
-  font-size: 4rem;
-  color: #000;
-  letter-spacing: initial;
-}
-.step__box .content .paragraph {
-  width: 94%;
+  height: auto;
+  width: 25vw;
 }
 .step .button {
   border: 4px solid rgb(186, 186, 253);
@@ -2779,10 +2762,7 @@ td i {
   }
   .step__box .content {
     margin: 0;
-  }
-  .step__box .content .paragraph {
-    width: 60%;
-    margin: 0 auto;
+    width: 50vw;
   }
 }
 @media (max-width: 768px) {
