@@ -64,68 +64,18 @@ $(document).on("click", 'a[href^="#"]', function (event) {
   );
 });
 $(window).on("scroll", () => {
-  if ($(window).scrollTop() <= 670) {
-    $(".header-1").removeClass("fixed");
+  let scrollPosition = window.innerHeight - $(".header-1").outerHeight();
+  if ($(window).scrollTop() <= scrollPosition) {
+    $(".header-1").removeClass("fixed").css({ bottom: "0", top: "unset" });
   } else {
-    $(".header-1").addClass("fixed");
+    $(".header-1").addClass("fixed").css({ bottom: "unset", top: "0" });
   }
 });
-$(window).on("scroll", () => {
-  if ($(window).scrollTop() >= 1300) {
-    $(".header-imp").addClass("highlight");
-  } else {
-    $(".header-imp").removeClass("highlight");
-  }
-});
-/********************
-Hero
-********************/
-const dynamic_text = [
-  "Campus Management",
-  "Timetable Automation",
-  "Smart Information Hub",
-  "Future-Ready Education",
-  "Personal AI Tutor",
-  "Seamless Administration",
-];
-
-let index = 0;
-const dynamicTextElement = document.getElementById("hero-dynamic-text");
-
-function initializeDynamicTextWidth() {
-  const initialWidth = dynamicTextElement.offsetWidth;
-  dynamicTextElement.style.width = `${initialWidth}px`;
-}
-
-window.addEventListener("load", initializeDynamicTextWidth);
-
-function changeText() {
-  dynamicTextElement.classList.add("text-disappear");
-  setTimeout(() => {
-    const currentWidth = dynamicTextElement.offsetWidth;
-    index = (index + 1) % dynamic_text.length;
-    dynamicTextElement.textContent = dynamic_text[index];
-    const newWidth = dynamicTextElement.offsetWidth;
-    dynamicTextElement.style.width = `${currentWidth}px`;
-    dynamicTextElement.offsetHeight;
-    dynamicTextElement.style.width = `${newWidth}px`;
-    dynamicTextElement.classList.remove("text-disappear");
-    dynamicTextElement.classList.add("text-appear");
-    setTimeout(() => {
-      dynamicTextElement.style.width = "";
-      dynamicTextElement.classList.remove("text-appear");
-    }, 1000);
-  }, 1000);
-}
-
-setTimeout(() => {
-  changeText();
-  setInterval(changeText, 4000);
-}, 500);
 
 /********************
 testimonial
 ********************/
+/*
 $(".testimonial__wrapper").on("mouseover click", (e) => {
   if ($(e.target).is("img")) {
     let parentElement = $(e.target).parent().parent();
@@ -135,11 +85,12 @@ $(".testimonial__wrapper").on("mouseover click", (e) => {
       parentElement.siblings().removeClass("active");
     }
   }
-});
+});*/
 
 /********************
 clients slider
 ********************/
+/*
 var clients = new Swiper(".clients-slider", {
   loop: true,
   autoplay: true,
@@ -153,85 +104,11 @@ var clients = new Swiper(".clients-slider", {
     },
   },
 });
-
-/********************
-screenshot slider
-********************/
-const leftTexts = [
-  "Modern",
-  "Automated",
-  "All Materials",
-  "Smart",
-  "Seamless Collaboration",
-  "AI-Powered",
-];
-
-const rightTexts = [
-  "UI",
-  "Error-Free Scheduling",
-  "in One Place",
-  "Day Planner",
-  "& Networking",
-  "Student Support",
-];
-var screenshot = new Swiper(".screenshot-slider", {
-  loop: true,
-  slidesPerView: 4.75,
-  centeredSlides: true,
-  spaceBetween: 30,
-  navigation: {
-    nextEl: ".screenshot-nav-next",
-    prevEl: ".screenshot-nav-prev",
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    991.98: {
-      slidesPerView: 2.75,
-    },
-    1200: {
-      slidesPerView: 3.25,
-    },
-    1350: {
-      slidesPerView: 3.5,
-    },
-    1600: {
-      slidesPerView: 3.9,
-    },
-    1800: {
-      slidesPerView: 4.75,
-    },
-  },
-  on: {
-    slideChange: function () {
-      const activeIndex = this.realIndex;
-      document
-        .querySelector(".screenshot-text-left")
-        .classList.add("clicked-left");
-      document
-        .querySelector(".screenshot-text-right")
-        .classList.add("clicked-right");
-      document.querySelector(".screenshot-text-left").textContent =
-        leftTexts[activeIndex];
-      document.querySelector(".screenshot-text-right").textContent =
-        rightTexts[activeIndex];
-      setTimeout(() => {
-        document
-          .querySelector(".screenshot-text-left")
-          .classList.remove("clicked-left");
-        document
-          .querySelector(".screenshot-text-right")
-          .classList.remove("clicked-right");
-      }, 1000);
-    },
-  },
-});
-screenshot.emit("slideChange");
-
+*/
 /********************
 related post slider
 ********************/
+/*
 var related_post = new Swiper(".blog_related-slider", {
   loop: true,
   slidesPerView: 2,
@@ -248,7 +125,7 @@ var related_post = new Swiper(".blog_related-slider", {
       slidesPerView: 2,
     },
   },
-});
+});*/
 
 /********************
 accordion
@@ -266,6 +143,7 @@ $(".card").on("show.bs.collapse", function (e) {
 /********************
 blog
 ********************/
+/*
 $(".category__dropdown").on("click", (e) => {
   if (
     $(e.target).parents().hasClass("category__dropdown") &&
@@ -306,25 +184,30 @@ $(".nav__dropdown-info").on("click", (e) => {
   let parentId = $(e.target).closest("li").attr("id");
   $(`#${parentId} > .nav__dropdown-box`).toggleClass("shown");
 });
-
+*/
 /********************
 youtube defer
 ********************/
+/*
 window.addEventListener("load", ytdefer_setup);
-
+*/
 /********************
 Pop-up
 ********************/
+/*
 const modal = document.getElementById("featureModal");
 const learnMoreBtn = document.getElementById("learnMoreBtn");
 const closeBtn = document.getElementsByClassName("close")[0];
-const content = document.getElementsByClassName("hidden-text");
-
-learnMoreBtn.addEventListener("click", function () {
-  for (let i = 0; i < content.length; i++) {
-    content[i].classList.toggle("hidden");
+*/
+function toggleOpacity() {
+  let elements = document.getElementsByClassName("toggled");
+  for (let element = 0; element < elements.length; element++) {
+    let currentOpacity = window.getComputedStyle(elements[element]).opacity;
+    elements[element].style.opacity = currentOpacity === "0" ? "1" : "0";
   }
-});
+}
+
+/*
 learnMoreBtn.addEventListener("click", (e) => {
   e.preventDefault();
   modal.style.display = "block";
@@ -337,4 +220,31 @@ window.addEventListener("click", (event) => {
   if (event.target === modal) {
     modal.style.display = "none";
   }
-});
+});*/
+
+// Dark & Light toggle
+
+let btnstatus = 0;
+function toggleBtn0() {
+  btnstatus = 0;
+  updatebtn();
+}
+function toggleBtn1() {
+  btnstatus = 1;
+  updatebtn();
+}
+function updatebtn() {
+  let fgroup = document.getElementsByClassName("form-group");
+  if (btnstatus == 0) {
+    document.getElementsByClassName("submit-btn")[0].textContent = "JOIN NOW";
+    fgroup[1].classList.remove("form-hidden");
+    fgroup[4].classList.remove("form-hidden");
+    fgroup[5].classList.remove("form-hidden");
+  } else {
+    document.getElementsByClassName("submit-btn")[0].textContent = "GET A DEMO";
+
+    fgroup[1].classList.add("form-hidden");
+    fgroup[4].classList.add("form-hidden");
+    fgroup[5].classList.add("form-hidden");
+  }
+}

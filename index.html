@@ -31,35 +31,76 @@
     <!--stylesheet-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/all.min.css" />
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <!--<link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />-->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
   <body>
     <!--preloader start-->
     <div class="preloader">
-      <img src="assets/images/logo.png" alt="image" width="400" />
+      <img src="assets/images/logo.png" alt="preloader-logo" width="750" />
     </div>
     <!--preloader end-->
 
+    <!--hero section start-->
+    <section class="hero">
+      <div class="hero__wrapper">
+        <div class="container">
+          <div class="row align-items-lg-center">
+            <div class="col-lg-6 order-2 order-lg-1">
+              <h1 class="main-heading color-black">
+                Powering<br />
+                Institutions
+              </h1>
+              <p class="paragraph">
+                <span>Kampus Konnect</span> is a super app designed for seamless
+                institution management.
+              </p>
+              <div class="download-buttons">
+                <a href="#" class="google-play">
+                  <i class="fab fa-google-play"></i>
+                  <div class="button-content">
+                    <h6>GET IT ON <span>Google Play</span></h6>
+                  </div>
+                </a>
+                <a href="#" class="apple-store">
+                  <i class="fab fa-apple"></i>
+                  <div class="button-content">
+                    <h6>COMING SOON ON <span>Apple Store</span></h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2">
+              <div class="questions-img hero-img">
+                <img
+                  src="assets/images/home.webp"
+                  alt="hero-home"
+                  height="650"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--hero section end-->
     <!--header section start-->
-    <section class="header header-1">
+    <header class="header header-1">
       <div class="container">
         <div class="header__wrapper">
           <div class="header__logo">
             <a href="index.html">
-              <img src="assets/images/logo.png" alt="logo" width="40" />
+              <img src="assets/images/logo.png" alt="header-logo" width="150" />
             </a>
           </div>
           <div class="header__nav">
             <ul class="header__nav-primary">
-              <li><a href="#feature">Features</a></li>
+              <li><a href="#video">Features</a></li>
+              <li><a href="#feature">Pilot Project</a></li>
               <li><a href="#faq">FAQs</a></li>
               <li><a href="#pricing">Pricing</a></li>
-              <li>
-                <a href="#step" class="header-imp"> Demo </a>
-              </li>
-              <li><a href="#about">Pilot Project</a></li>
+              <li><a href="#contact">Demo</a></li>
             </ul>
             <span><i class="fas fa-times"></i></span>
           </div>
@@ -70,22 +111,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </header>
     <!--header section end-->
 
-    <!--hero section start-->
-    <section class="hero">
-      <div class="hero__wrapper d-flex flex-column align-items-center">
-        <img src="/assets/images/logo.png" width="250" />
-        <p class="hero-title">Kampus-Konnect</p>
-        <div class="hero-content d-flex flex-row">
-          <p>Transform Institution with AI-Powered</p>
-          <p id="hero-dynamic-text">Campus Management</p>
-        </div>
-        <div class="hero-cta">Schedule a Free Demo</div>
-      </div>
-    </section>
-    <!--hero section end-->
     <!--feature section start-->
     <!--
     <section class="feature" id="intro">
@@ -164,7 +192,8 @@
     <!--feature section end-->
 
     <!--video section start-->
-    <!--<div class="video" id="video">
+    <!--
+    <div class="video" id="video">
       <div class="video__wrapper">
         <div class="container">
           <div class="video__play">
@@ -217,115 +246,115 @@
       </div>
     </div>-->
     <!--video section end-->
-    <!--screenshot section start-->
-    <section class="screenshot" id="preview">
-      <div class="screenshot__wrapper">
-        <div class="container">
-          <div class="screenshot__info">
-            <h2 class="section-heading color-black">
-              The Super App Built for Universities
-            </h2>
-            <div class="screenshot-nav">
-              <div class="screenshot-nav-prev">
-                <i class="fad fa-long-arrow-left"></i>
-              </div>
-              <div class="screenshot-nav-next">
-                <i class="fad fa-long-arrow-right"></i>
-              </div>
-            </div>
-          </div>
+    <section id="features-new">
+      <p class="features-heading">Institutional Impact:</p>
+      <p class="features-subheading">
+        Transforming the Way Institutions Operate
+      </p>
+      <p class="features-text">
+        KampusKonnect is the all-in-one super app designed to streamline and
+        enhance institutional management. From K-12 schools to universities and
+        colleges, it eliminates manual inefficiencies, unifies operations, and
+        brings the future of education to your fingertips.
+      </p>
+      <div class="feature-cards">
+        <div class="feature-card">
+          <i class="fas fa-school"></i>
+          <p>Campus Management</p>
         </div>
-        <div class="screenshot-subheading">
-          Eliminate <b>manual inefficiencies</b> and
-          <b>fragmented systems</b>—KampusKonnect
-          <b>automates, optimizes and transforms</b> how institutions operate.It
-          can be used by k-12, universities and colleges.
+        <div class="feature-card">
+          <i class="fas fa-table"></i>
+          <p>Timetable Automation</p>
         </div>
-        <div class="screenshot-subheading-2"><b>Demo of our App</b></div>
-        <div class="swiper-container screenshot-slider">
-          <div class="screenshot-text-left"></div>
-          <div class="screenshot-text-right"></div>
-          <div class="swiper-wrapper">
-            <div class="swiper-slide screenshot-slide">
-              <img src="assets/images/demo-1-home.png" alt="image" />
-            </div>
-            <div class="swiper-slide screenshot-slide">
-              <img src="assets/images/demo-2-timetable.png" alt="image" />
-            </div>
-            <div class="swiper-slide screenshot-slide">
-              <img src="assets/images/demo-3-classes.png" alt="image" />
-            </div>
-            <div class="swiper-slide screenshot-slide">
-              <img src="assets/images/demo-4-calendar.png" alt="image" />
-            </div>
-            <div class="swiper-slide screenshot-slide">
-              <img src="assets/images/demo-5-groups.png" alt="image" />
-            </div>
-            <div class="swiper-slide screenshot-slide">
-              <img
-                src="assets/images/demo-6-complaint-resolution.png"
-                alt="image"
-              />
-            </div>
-          </div>
+        <div class="feature-card">
+          <i class="fas fa-info-circle"></i>
+          <p>Smart Information Hub</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-robot"></i>
+          <p>Personal AI Tutor</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-user-cog"></i>
+          <p>Seamless Administration</p>
         </div>
       </div>
     </section>
-    <!--screenshot section end-->
-    <!--College Info Section Begins-->
     <section id="about">
-      <div class="about-heading">Pilot Project AT MSU Baroda</div>
-      <div class="about-content">
-        <div class="about-info-boxes" style="gap: 0; background-color: white">
-          <div class="about-info-text">
-            <b>About The Pilot Project</b> <br /><br />With 800-1000 Students we
-            are doing pilot project for our product with The Maharaja Sayajirao
-            University of Baroda.
-          </div>
-          <div class="about-info-grid-boxes">
-            <div class="about-info-grid-item">
-              <p><b>Location</b></p>
-              <p>Vadodara, Gujarat</p>
+      <p class="about-heading">Pilot Project AT MSU Baroda</p>
+      <table>
+        <tr>
+          <td rowspan="3" colspan="2">
+            <div>
+              <i class="fas fa-user-friends about-icon"></i>
+              <p class="about-info-text">
+                <b>800-1000 Students:</b><br />
+                we are doing pilot project for our product with The Maharaja
+                Sayajirao University of Baroda.
+              </p>
             </div>
-            <div class="about-info-grid-item">
-              <p><b>Type</b></p>
-              <p>Public University</p>
+          </td>
+          <td style="padding: 0.5rem 1.5rem">
+            <img
+              src="/assets/images/MSUB.webp"
+              alt="MSUB-logo"
+              style="max-height: 100%; max-width: 100%"
+            />
+          </td>
+          <td>
+            <div>
+              <i class="fas fa-building"></i>
+              <p class="about-value">
+                The Maharaja Sayajirao Gaikwad University of Baroda
+              </p>
             </div>
-            <div class="about-info-grid-item">
-              <p><b>Campus</b></p>
-              <p>Urban</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div>
+              <i class="fas fa-user-friends"></i>
+              <p class="about-value">49000+</p>
+              <p class="about-key">Students Enrolled</p>
             </div>
-            <div class="about-info-grid-item">
-              <p><b>Recognition</b></p>
-              <p>UGC Approved</p>
+          </td>
+          <td>
+            <div>
+              <i class="fas fa-calendar-alt"></i>
+              <p class="about-value">1949</p>
+              <p class="about-key">Year Established</p>
             </div>
-          </div>
-        </div>
-        <div class="about-info-boxes-2">
-          <div class="about-info">
-            <i class="fas fa-user-friends about-icon"></i>
-            <p class="about-value">49000+</p>
-            <p class="about-key">Students Enrolled</p>
-          </div>
-          <div class="about-info">
-            <i class="fas fa-building about-icon"></i>
-            <p class="about-value">1949</p>
-            <p class="about-key">Year Established</p>
-          </div>
-          <div class="about-info">
-            <i class="far fa-check-circle about-icon"></i>
-            <p class="about-value">Government</p>
-            <p class="about-key">Institution Status</p>
-          </div>
-          <div class="about-info">
-            <i class="fas fa-star-of-life about-icon"></i>
-            <p class="about-value">101-150 Band</p>
-            <p class="about-key">NIRF Ranking (2020)</p>
-          </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div>
+              <i class="far fa-check-circle"></i>
+              <p class="about-value">Government</p>
+              <p class="about-key">Institution Status</p>
+            </div>
+          </td>
+          <td>
+            <div>
+              <i class="fas fa-star-of-life"></i>
+              <p class="about-value">101-150 Band</p>
+              <p class="about-key">NIRF Ranking (2020)</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <p class="about-heading">
+        Join Our Pilot Program –<br />
+        Premium Features at a Fraction of the Cost!
+      </p>
+      <div class="row">
+        <div class="button__wrapper">
+          <a href="#" class="button">
+            <span>LEARN MORE</span>
+          </a>
         </div>
       </div>
     </section>
-    <!--College Info Section Ends-->
     <!--growth section start-->
     <section class="growth" id="feature">
       <div class="growth__wrapper">
@@ -336,26 +365,21 @@
           <div class="row">
             <div class="col-lg-6">
               <div class="growth__box">
-                <div class="icon"><i class="fas fa-chalkboard"></i></div>
+                <div class="icon">
+                  <i class="fas fa-chalkboard-teacher"></i>
+                </div>
                 <div class="content">
                   <h3>Classes</h3>
-                  <h4 class="hidden-text">Everything in One Place</h4>
-                  <p class="paragraph dark">
-                    Access attendance, chats, attachments, assignments, and
-                    syllabus for every subject in a single, organized view.
+                  <p class="paragraph dark toggled">
+                    <b>Everything in One Place</b>
                   </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="growth__box">
-                <div class="icon"><i class="fad fa-calendar"></i></div>
-                <div class="content">
-                  <h3>Calendar</h3>
-                  <h4 class="hidden-text">Stay Updated, Always</h4>
                   <p class="paragraph dark">
-                    All university events, holidays, and academic schedules are
-                    seamlessly integrated, ensuring no missed deadlines.
+                    Access
+                    <b
+                      >attendance, chats, attachments, assignments, and
+                      syllabus</b
+                    >
+                    for every subject in a single, organized view.
                   </p>
                 </div>
               </div>
@@ -363,28 +387,55 @@
             <div class="col-lg-6">
               <div class="growth__box">
                 <div class="icon">
-                  <i class="far fa-info-circle"></i>
+                  <i class="fas fa-calendar"></i>
                 </div>
                 <div class="content">
-                  <h3>Information Portal</h3>
-                  <h4 class="hidden-text">Instant Access to Key Updates</h4>
+                  <h3>Calendar</h3>
+                  <p class="paragraph dark toggled">
+                    <b>Stay Updated, Always</b>
+                  </p>
                   <p class="paragraph dark">
-                    Get real-time updates on university events, holidays, and
-                    academic calendars—all in one central hub.
+                    All
+                    <b>university events, holidays, and academic schedules</b>
+                    are seamlessly integrated, ensuring no missed deadlines.
                   </p>
                 </div>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="growth__box">
-                <div class="icon"><i class="fas fa-tools"></i></div>
+                <div class="icon">
+                  <i class="fas fa-info-circle"></i>
+                </div>
+                <div class="content">
+                  <h3>Information Portal</h3>
+                  <p class="paragraph dark toggled">
+                    <b>Instant Access to Key Updates</b>
+                  </p>
+                  <p class="paragraph dark">
+                    Get real-time updates on
+                    <b>university events, holidays, and academic calendars</b
+                    >—all in one central hub.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="growth__box">
+                <div class="icon">
+                  <i class="fas fa-tools"></i>
+                </div>
                 <div class="content">
                   <h3>Tools</h3>
-                  <h4 class="hidden-text">Essential Campus Utilities</h4>
+                  <p class="paragraph dark toggled">
+                    <b>Essential Campus Utilities</b>
+                  </p>
                   <p class="paragraph dark">
-                    From Resume/CV Maker and Location Finder to Public
-                    Transport, Emergency Help, and even a Dustbin Locator—all
-                    the tools students need, in one place.
+                    From
+                    <b
+                      >Resume/CV Maker and Location Finder to Public Transport,
+                      Emergency Help, and even a Dustbin Locator</b
+                    >—all the tools students need, in one place.
                   </p>
                 </div>
               </div>
@@ -395,39 +446,16 @@
                   <i class="fas fa-user-graduate"></i>
                 </div>
                 <div class="content">
-                  <h3>Alumni & Content Building</h3>
-                  <h4 class="hidden-text">
-                    Stronger Connections, Brighter Opportunities
-                  </h4>
-                  <p class="paragraph dark">
-                    Stay connected with alumni for networking, mentorship,
-                    funding, and career opportunities.
+                  <h3>Alumni & Community Building</h3>
+                  <p class="paragraph dark toggled">
+                    <b>Stronger Connections, Brighter Opportunities</b>
                   </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="growth__box">
-                <div class="icon"><i class="fas fa-calendar-check"></i></div>
-                <div class="content">
-                  <h3>Timetable Automation</h3>
-                  <h4 class="hidden-text">Hassle-Free Scheduling</h4>
                   <p class="paragraph dark">
-                    Automatically managed via the admin panel, ensuring
-                    error-free, optimized timetables.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="growth__box">
-                <div class="icon"><i class="fas fa-user-check"></i></div>
-                <div class="content">
-                  <h3>Attendance & Result Tracking</h3>
-                  <h4 class="hidden-text">Real-Time Performance Insights</h4>
-                  <p class="paragraph dark">
-                    Students can check subject-wise attendance and semester-wise
-                    results at a glance.
+                    Stay connected with alumni for
+                    <b
+                      >networking, mentorship, funding, and career
+                      opportunities.</b
+                    >
                   </p>
                 </div>
               </div>
@@ -435,14 +463,54 @@
             <div class="col-lg-6">
               <div class="growth__box">
                 <div class="icon">
-                  <i class="fas fa-headset"></i>
+                  <i class="fas fa-calendar-day"></i>
+                </div>
+                <div class="content">
+                  <h3>Timetable Automation</h3>
+                  <p class="paragraph dark toggled">
+                    <b>Hassle-Free Scheduling</b>
+                  </p>
+                  <p class="paragraph dark">
+                    Automatically managed via the <b>admin panel</b>, ensuring
+                    <b>error-free, optimized</b> timetables.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="growth__box">
+                <div class="icon">
+                  <i class="fas fa-users"></i>
+                </div>
+                <div class="content">
+                  <h3>Attendance & Result Tracking</h3>
+                  <p class="paragraph dark toggled">
+                    <b>Real-Time Performance Insights</b>
+                  </p>
+                  <p class="paragraph dark">
+                    Students can check
+                    <b>subject-wise attendance and semester-wise results </b>
+                    at a glance.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="growth__box">
+                <div class="icon">
+                  <i class="fas fa-user-headset"></i>
                 </div>
                 <div class="content">
                   <h3>Complaint Resolution System</h3>
-                  <h4 class="hidden-text">AI-Powered Grievance Management</h4>
+                  <p class="paragraph dark toggled">
+                    <b>AI-Powered Grievance Management</b>
+                  </p>
                   <p class="paragraph dark">
-                    A structured, efficient feedback and complaint resolution
-                    system that ensures concerns are addressed transparently and
+                    A structured,
+                    <b>efficient feedback and complaint resolution system</b>
+                    that ensures concerns are addressed transparently and
                     swiftly.
                   </p>
                 </div>
@@ -454,7 +522,7 @@
               <a href="#" class="button">
                 <span>GET STARTED <i class="fad fa-long-arrow-right"></i></span>
               </a>
-              <a href="#" class="button" id="learnMoreBtn">
+              <a href="#" class="button" onclick="toggleOpacity()">
                 <span>LEARN MORE <i class="fad fa-long-arrow-right"></i></span>
               </a>
             </div>
@@ -463,168 +531,48 @@
       </div>
     </section>
     <!--growth section end-->
-    <!-- Pop-up section begins-->
-    <div id="featureModal" class="modal">
-      <div class="modal-content">
-        <div class="close">&times;</div>
-        <h2 class="section-heading color-black">
-          Powerful Features, Trusted by Institutions
-        </h2>
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="growth__box">
-              <div class="icon"><i class="fas fa-chalkboard"></i></div>
-              <div class="content">
-                <h3>Classes</h3>
-                <h4>Everything in One Place</h4>
-                <p class="paragraph dark">
-                  Access attendance, chats, attachments, assignments, and
-                  syllabus for every subject in a single, organized view.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="growth__box">
-              <div class="icon"><i class="fad fa-calendar"></i></div>
-              <div class="content">
-                <h3>Calendar</h3>
-                <h4>Stay Updated, Always</h4>
-                <p class="paragraph dark">
-                  All university events, holidays, and academic schedules are
-                  seamlessly integrated, ensuring no missed deadlines.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="growth__box">
-              <div class="icon">
-                <i class="far fa-info-circle"></i>
-              </div>
-              <div class="content">
-                <h3>Information Portal</h3>
-                <h4>Instant Access to Key Updates</h4>
-                <p class="paragraph dark">
-                  Get real-time updates on university events, holidays, and
-                  academic calendars—all in one central hub.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="growth__box">
-              <div class="icon"><i class="fas fa-tools"></i></div>
-              <div class="content">
-                <h3>Tools</h3>
-                <h4>Essential Campus Utilities</h4>
-                <p class="paragraph dark">
-                  From Resume/CV Maker and Location Finder to Public Transport,
-                  Emergency Help, and even a Dustbin Locator—all the tools
-                  students need, in one place.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="growth__box">
-              <div class="icon">
-                <i class="fas fa-user-graduate"></i>
-              </div>
-              <div class="content">
-                <h3>Alumni & Content Building</h3>
-                <h4>Stronger Connections, Brighter Opportunities</h4>
-                <p class="paragraph dark">
-                  Stay connected with alumni for networking, mentorship,
-                  funding, and career opportunities.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="growth__box">
-              <div class="icon"><i class="fas fa-calendar-check"></i></div>
-              <div class="content">
-                <h3>Timetable Automation</h3>
-                <h4>Hassle-Free Scheduling</h4>
-                <p class="paragraph dark">
-                  Automatically managed via the admin panel, ensuring
-                  error-free, optimized timetables.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="growth__box">
-              <div class="icon"><i class="fas fa-user-check"></i></div>
-              <div class="content">
-                <h3>Attendance & Result Tracking</h3>
-                <h4>Real-Time Performance Insights</h4>
-                <p class="paragraph dark">
-                  Students can check subject-wise attendance and semester-wise
-                  results at a glance.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="growth__box">
-              <div class="icon">
-                <i class="fas fa-headset"></i>
-              </div>
-              <div class="content">
-                <h3>Complaint Resolution System</h3>
-                <h4>AI-Powered Grievance Management</h4>
-                <p class="paragraph dark">
-                  A structured, efficient feedback and complaint resolution
-                  system that ensures concerns are addressed transparently and
-                  swiftly.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Pop-up section ends-->
+
     <!--step section start-->
-    <section class="step" id="step">
+    <section class="step">
       <div class="step__wrapper">
         <div class="container">
-          <h2 class="section-heading color-black">
-            Effortless Onboarding in 3 Simple Steps
-          </h2>
+          <h2 class="section-heading color-black">Start in 3 Simple Steps</h2>
           <div class="row">
             <div class="col-lg-4">
               <div class="step__box">
-                <div class="content">
-                  <h3>Connect With Us</h3>
+                <div
+                  class="content"
+                  style="background: url('/assets/images/faq.webp')"
+                >
+                  <h3>Connect<span>With Us</span></h3>
                   <p class="paragraph dark">
-                    Tell us your needs, and our team will personally guide you
-                    through KampusKonnect.
+                    Tell us your needs, and we’ll guide you through.
                   </p>
                 </div>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="step__box">
-                <div class="content">
-                  <h3>We Customize & Set It Up</h3>
+                <div
+                  class="content"
+                  style="background: url('/assets/images/home.webp')"
+                >
+                  <h3>Personalized<span>Setup</span></h3>
                   <p class="paragraph dark">
-                    From <b>timetables to attendance and integrations</b>, we
-                    tailor everything for your institution.
+                    We customize everything to fit your institution’s needs.
                   </p>
                 </div>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="step__box">
-                <div class="content">
-                  <h3>Seamless Deployment & Support</h3>
+                <div
+                  class="content"
+                  style="background: url('/assets/images/home.webp')"
+                >
+                  <h3>Smooth<span>& Supported</span></h3>
                   <p class="paragraph dark">
-                    We seamlessly deploy KampusKonnect for your institution and
-                    provide <b>end-to-end support and training</b> for a smooth
-                    transition.
+                    Seamless setup with full support every step of the way.
                   </p>
                 </div>
               </div>
@@ -633,10 +581,9 @@
           <div class="row">
             <div class="button__wrapper">
               <a href="#" class="button">
-                <span>GET STARTED <i class="fad fa-long-arrow-right"></i></span>
-              </a>
-              <a href="#" class="button">
-                <span>LEARN MORE <i class="fad fa-long-arrow-right"></i></span>
+                <span
+                  >LET'S GET STARTED <i class="fad fa-long-arrow-right"></i
+                ></span>
               </a>
             </div>
           </div>
@@ -755,7 +702,7 @@
       <div class="questions__wrapper">
         <div class="container">
           <h2 class="section-heading color-black">
-            Some frequently asked questions.
+            Frequently Asked Questions
           </h2>
           <div class="row align-items-lg-center">
             <div class="col-lg-6 order-2 order-lg-1">
@@ -786,7 +733,7 @@
                       <p class="paragraph">
                         We handle everything for you! Setup time depends on
                         customization needs, but most institutions are up and
-                        running <b>within a few days to a couple of weeks</b>.
+                        running <b>within a few days to a couple of weeks.</b>
                       </p>
                     </div>
                   </div>
@@ -857,7 +804,11 @@
             </div>
             <div class="col-lg-6 order-1 order-lg-2">
               <div class="questions-img">
-                <img src="assets/images/home.jpg" alt="image" />
+                <img
+                  src="assets/images/faq.webp"
+                  alt="faq-image"
+                  height="700"
+                />
               </div>
             </div>
           </div>
@@ -870,7 +821,8 @@
     <section class="pricing" id="pricing">
       <div class="pricing__wrapper">
         <h2 class="section-heading color-black">
-          Flexible Pricing Plans – Scalable for Every Institution
+          Flexible Pricing Plans –<br />
+          Scalable for Every Institution
         </h2>
         <div class="container">
           <div class="row">
@@ -880,8 +832,12 @@
                 <div class="icon">
                   <i class="fad fa-user-graduate"></i>
                 </div>
-                <h4>STANDARD</h4>
-                <h3>₹ 99 per student/month</h3>
+                <h4>STANDARD PLAN</h4>
+                <h4>₹99 per student/month</h4>
+                <h6 style="text-align: center">
+                  For institutions looking to streamline daily operations
+                  efficiently.
+                </h6>
                 <div class="list">
                   <ul>
                     <li>
@@ -901,6 +857,10 @@
                     <li class="not-included">
                       Priority Support & Dedicated Account Manager
                     </li>
+                    <li>
+                      Perfect for institutions starting their digital
+                      transformation.
+                    </li>
                   </ul>
                 </div>
                 <a href="#" class="button">
@@ -910,14 +870,17 @@
                 </a>
               </div>
             </div>
-            <div class="col-lg-1"></div>
             <div class="col-lg-5">
               <div class="pricing__single pricing__single-2">
                 <div class="icon">
                   <i class="fad fa-user-cowboy"></i>
                 </div>
-                <h4>PREMIUM</h4>
-                <h3>₹ 139 per student/month</h3>
+                <h4>PREMIUM PLAN</h4>
+                <h4>₹139 per student/month</h4>
+                <h6 style="text-align: center">
+                  For institutions that need deeper insights, automation, and
+                  premium support.
+                </h6>
                 <div class="list">
                   <ul>
                     <li>
@@ -931,6 +894,10 @@
                     <li>Alumni & Community Networking</li>
                     <li>Full Customization & API Integrations</li>
                     <li>Priority Support & Dedicated Account Manager</li>
+                    <li>
+                      Ideal for institutions seeking complete AI-driven
+                      automation & growth.
+                    </li>
                   </ul>
                 </div>
                 <a href="#" class="button">
@@ -940,11 +907,54 @@
                 </a>
               </div>
             </div>
+            <div class="col-lg-1"></div>
           </div>
         </div>
       </div>
     </section>
     <!--pricing section end-->
+
+    <!--screenshot section start-->
+    <!--
+    <section class="screenshot" id="preview">
+      <div class="screenshot__wrapper">
+        <div class="container">
+          <div class="screenshot__info">
+            <h2 class="section-heading color-black">
+              Have a look at what’s inside the app.
+            </h2>
+            <div class="screenshot-nav">
+              <div class="screenshot-nav-prev">
+                <i class="fad fa-long-arrow-left"></i>
+              </div>
+              <div class="screenshot-nav-next">
+                <i class="fad fa-long-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-container screenshot-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide screenshot-slide">
+              <img src="assets/images/phone-01.png" alt="image" />
+            </div>
+            <div class="swiper-slide screenshot-slide">
+              <img src="assets/images/phone-02.png" alt="image" />
+            </div>
+            <div class="swiper-slide screenshot-slide">
+              <img src="assets/images/phone-03.png" alt="image" />
+            </div>
+            <div class="swiper-slide screenshot-slide">
+              <img src="assets/images/phone-04.png" alt="image" />
+            </div>
+            <div class="swiper-slide screenshot-slide">
+              <img src="assets/images/phone-05.png" alt="image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>-->
+    <!--screenshot section end-->
 
     <!--related blog section start-->
     <!--
@@ -1003,8 +1013,7 @@
           <span>GO TO BLOG <i class="fad fa-long-arrow-right"></i></span>
         </a>
       </div>
-    </section>
-    -->
+    </section>-->
     <!--related blog section end-->
 
     <!--newsletter section start-->
@@ -1042,215 +1051,84 @@
       </div>
     </section>-->
     <!--newsletter section end-->
-
-    <div class="container">
-      <div class="form-card">
-        <!-- Header -->
-        <h1>Contact Us</h1>
-        <p class="subtitle">Fill out the form below to get in touch with us.</p>
-
-        <!-- Company Logos -->
-        <div class="logos-section">
-          <p class="logos-subtitle">Trusted by leading companies worldwide</p>
-          <div class="logos-container">
-            <img
-              src="https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?auto=format&fit=crop&w=120&h=40&q=80"
-              alt="Google"
-            />
-            <img
-              src="https://images.unsplash.com/photo-1633419461186-1f0e2b5785e4?auto=format&fit=crop&w=120&h=40&q=80"
-              alt="Microsoft"
-            />
-            <img
-              src="https://images.unsplash.com/photo-1611944212129-29977ae1398c?auto=format&fit=crop&w=120&h=40&q=80"
-              alt="Apple"
-            />
-            <img
-              src="https://images.unsplash.com/photo-1614680376593-902f74cf0d41?auto=format&fit=crop&w=120&h=40&q=80"
-              alt="Amazon"
-            />
-            <img
-              src="https://images.unsplash.com/photo-1636690619068-eb397d9d3ed4?auto=format&fit=crop&w=120&h=40&q=80"
-              alt="Meta"
-            />
-          </div>
-        </div>
-
-        <!-- Buttons -->
-        <div class="button-group">
-          <button class="btn btn-primary">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+    <!-- Contact Section Begins-->
+    <section id="contact">
+      <p class="contact-heading">JOIN LEADING INSTITUTIONS LIKE MSUB</p>
+      <div class="contact-container">
+        <div class="form-card">
+          <div class="top-buttons">
+            <button
+              class="btn btn-primary"
+              style="font-size: 1.5rem"
+              onclick="toggleBtn0()"
             >
-              <line x1="22" y1="2" x2="11" y2="13"></line>
-              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-            </svg>
-            Submit Form
-          </button>
-          <button class="btn btn-secondary">Cancel</button>
-        </div>
-
-        <!-- Form -->
-        <form class="contact-form">
-          <div class="form-group">
-            <label for="name">Full Name</label>
-            <div class="input-wrapper">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                <circle cx="12" cy="7" r="4"></circle>
-              </svg>
-              <input type="text" id="name" placeholder="John Doe" />
-            </div>
+              Join Our Pilot Program
+            </button>
+            <button
+              class="btn btn-secondary"
+              style="font-size: 1.5rem"
+              onclick="toggleBtn1()"
+            >
+              Request a Demo
+            </button>
           </div>
-
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <div class="input-wrapper">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path
-                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-                ></path>
-                <polyline points="22,6 12,13 2,6"></polyline>
-              </svg>
-              <input type="email" id="email" placeholder="john@example.com" />
+          <form>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" required />
+              </div>
             </div>
-          </div>
-
-          <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <div class="input-wrapper">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path
-                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
-                ></path>
-              </svg>
-              <input type="tel" id="phone" placeholder="(123) 456-7890" />
+            <div class="form-group">
+              <label for="mob">Role</label>
+              <input type="text" id="role" required />
             </div>
-          </div>
-
-          <div class="form-group">
-            <label for="subject">Subject</label>
-            <div class="input-wrapper">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path
-                  d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
-                ></path>
-                <polyline points="14 2 14 8 20 8"></polyline>
-                <line x1="16" y1="13" x2="8" y2="13"></line>
-                <line x1="16" y1="17" x2="8" y2="17"></line>
-                <polyline points="10 9 9 9 8 9"></polyline>
-              </svg>
-              <input
-                type="text"
-                id="subject"
-                placeholder="What's this about?"
-              />
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" required />
             </div>
-          </div>
-
-          <div class="form-group">
-            <label for="message">Message</label>
-            <div class="input-wrapper">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path
-                  d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
-                ></path>
-              </svg>
-              <textarea
-                id="message"
-                rows="4"
-                placeholder="Your message here..."
-              ></textarea>
+            <div class="form-group">
+              <label for="mob">Mobile No.</label>
+              <input type="text" id="mob" required />
             </div>
-          </div>
-        </form>
+            <div class="form-group">
+              <label for="mob">College Name</label>
+              <input type="text" id="cname" required />
+            </div>
+            <div class="form-group">
+              <label for="mob">University Name</label>
+              <input type="text" id="uniname" required />
+            </div>
+            <div class="form-footer">
+              <button type="submit" class="btn btn-primary submit-btn">
+                JOIN NOW
+              </button>
 
-        <!-- Quote -->
-        <div class="quote-card">
-          <svg
-            class="quote-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path
-              d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"
-            ></path>
-            <path
-              d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"
-            ></path>
-          </svg>
-          <p class="quote-text">
-            "The best way to predict the future is to create it."
-          </p>
-          <p class="quote-author">- Peter Drucker</p>
+              <!-- Quote Section -->
+              <div class="quote-section">
+                <!-- Quote icon -->
+                <svg class="icon quote-icon" viewBox="0 0 24 24">
+                  <path
+                    d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"
+                  />
+                  <path
+                    d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"
+                  />
+                </svg>
+                <p class="quote-text">
+                  "KampusKonnect has transformed our administrative efficiency
+                  and student engagement like never before. Seamless automation,
+                  easy integrations, and outstanding support make it a must-have
+                  for modern institutions."
+                </p>
+                <p class="quote-author">-[MSUB Representative, Position]</p>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
-    </div>
+    </section>
+    <!-- Contact Section Ends-->
 
     <!--footer start-->
     <footer class="footer">
