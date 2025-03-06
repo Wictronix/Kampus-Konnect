@@ -234,17 +234,144 @@ function toggleBtn1() {
   updatebtn();
 }
 function updatebtn() {
-  let fgroup = document.getElementsByClassName("form-group");
+  let visibility = document.getElementsByClassName("form-optional");
   if (btnstatus == 0) {
-    document.getElementsByClassName("submit-btn")[0].textContent = "JOIN NOW";
-    fgroup[1].classList.remove("form-hidden");
-    fgroup[4].classList.remove("form-hidden");
-    fgroup[5].classList.remove("form-hidden");
+    for (let i = 0; i < visibility.length; i++) {
+      visibility[i].classList.remove("form-hidden");
+    }
   } else {
-    document.getElementsByClassName("submit-btn")[0].textContent = "GET A DEMO";
-
-    fgroup[1].classList.add("form-hidden");
-    fgroup[4].classList.add("form-hidden");
-    fgroup[5].classList.add("form-hidden");
+    for (let i = 0; i < visibility.length; i++) {
+      visibility[i].classList.add("form-hidden");
+    }
   }
+}
+
+function counter() {
+  let start = 0;
+  function updateCounter() {
+    let cnter = document.getElementsByClassName("counter")[0];
+    if (start < 49000) {
+      start += 1000;
+      cnter.textContent = start;
+      setTimeout(updateCounter, 25);
+    }
+  }
+  updateCounter();
+}
+
+document.addEventListener("readystatechange", function () {
+  if (document.readyState === "complete") {
+    let targetDiv = document.getElementById("step");
+
+    if (targetDiv) {
+      let observer = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              console.log("Div is in view!");
+              slidestep();
+              observer.disconnect();
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      observer.observe(targetDiv);
+    }
+    const section = document.getElementById("about");
+    const tds = document.querySelectorAll("td");
+
+    const observer2 = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            tds.forEach((td) => {
+              td.classList.add("animate");
+            });
+            setTimeout(counter, 1000);
+          } else {
+            tds.forEach((td) => {
+              td.classList.remove("animate");
+            });
+          }
+        });
+      },
+      {
+        threshold: 0.5,
+      }
+    );
+
+    if (section) {
+      observer2.observe(section);
+    }
+  }
+});
+
+function slidestep() {
+  const track = document.querySelector(".step-carousel__track");
+  const prevButton = document.querySelector(".prev");
+  const nextButton = document.querySelector(".next");
+  const slides = document.querySelectorAll(".step__box_small");
+  const totalSlides = slides.length;
+  let index = 1;
+
+  // Clone first and last slides for infinite effect
+  const firstClone = slides[0].cloneNode(true);
+  const lastClone = slides[totalSlides - 1].cloneNode(true);
+
+  track.appendChild(firstClone);
+  track.insertBefore(lastClone, slides[0]);
+
+  const allSlides = document.querySelectorAll(".step__box_small");
+  const slideWidth = slides[0].offsetWidth;
+
+  track.style.transform = `translateX(${-slideWidth * index}px)`;
+
+  function updateSlide() {
+    track.style.transition = "transform 0.5s ease-in-out";
+    track.style.transform = `translateX(${-slideWidth * index}px)`;
+  }
+  function nextSlide() {
+    if (index >= allSlides.length - 1) return;
+    index++;
+    updateSlide();
+
+    if (index === allSlides.length - 1) {
+      setTimeout(() => {
+        track.style.transition = "none";
+        index = 1;
+        track.style.transform = `translateX(${-slideWidth * index}px)`;
+      }, 500);
+    }
+  }
+  setInterval(nextSlide, 2000);
+
+  nextButton.addEventListener("click", function () {
+    if (index >= allSlides.length - 1) return;
+    index++;
+    updateSlide();
+
+    if (index === allSlides.length - 1) {
+      setTimeout(() => {
+        track.style.transition = "none";
+        index = 1;
+        track.style.transform = `translateX(${-slideWidth * index}px)`;
+      }, 500);
+    }
+  });
+
+  prevButton.addEventListener("click", function () {
+    if (index <= 0) return;
+    index--;
+    updateSlide();
+
+    if (index === 0) {
+      setTimeout(() => {
+        track.style.transition = "none";
+        index = totalSlides;
+        track.style.transform = `translateX(${-slideWidth * index}px)`;
+      }, 500);
+    }
+  });
 }
