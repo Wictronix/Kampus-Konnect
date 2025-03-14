@@ -39,30 +39,39 @@ $(".header .header__bars").on("click", function () {
 });
 
 $(".header .header__nav span").on("click", function () {
-  var selector = $(".header .header__nav");
+	var selector = $(".header .header__nav");
 
-  if (selector.hasClass("shown")) {
-    selector.css("right", "100%");
-    selector.removeClass("shown");
-  } else {
-    selector.css("right", "0");
-    selector.addClass("shown");
-  }
+	selector.css("right", "100%");
+	selector.removeClass("shown");
+});
+
+// Close the mobile nav when clicking on a link
+$(".header .header__nav a").on("click", function () {
+	var selector = $(".header .header__nav");
+
+	selector.css("right", "100%");
+	selector.removeClass("shown");
 });
 
 $(document).on("click", 'a[href^="#"]', function (event) {
-  event.preventDefault();
-  let elementId = $(event.target).attr("href");
-  if (elementId == "#") return;
+	event.preventDefault();
+	let elementId = $(event.target).attr("href");
+	if (elementId == "#") return;
 
-  $("html, body").animate(
-    {
-      scrollTop: $($.attr(this, "href")).offset().top,
-    },
-    1000,
-    "swing"
-  );
+	$("html, body").animate(
+		{
+			scrollTop: $($.attr(this, "href")).offset().top,
+		},
+		1000,
+		"swing"
+	);
+
+	// Close the mobile menu after clicking a link
+	var selector = $(".header .header__nav");
+	selector.css("right", "100%");
+	selector.removeClass("shown");
 });
+
 $(window).on("scroll", () => {
   let scrollPosition = window.innerHeight - $(".header-1").outerHeight();
   if ($(window).scrollTop() <= scrollPosition) {
@@ -71,6 +80,7 @@ $(window).on("scroll", () => {
     $(".header-1").addClass("fixed").css({ bottom: "unset", top: "0" });
   }
 });
+
 
 /********************
 testimonial
