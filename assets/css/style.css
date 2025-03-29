@@ -44,6 +44,9 @@ body {
   box-sizing: border-box;
   overflow-x: hidden !important;
 }
+section {
+  padding-top: 10vh;
+}
 a {
   text-decoration: none !important;
 }
@@ -1872,10 +1875,6 @@ body.loaded .preloader {
   padding: 10rem 0;
 }
 
-
-
-
- 
 /*
 .feature {
   width: 100vw;
@@ -2449,7 +2448,7 @@ body.loaded .preloader {
 }
 .step .section-heading {
   text-align: center;
-  color: #F3036A;
+  color: #f3036a;
   width: 100%;
 }
 .step__box {
@@ -2775,7 +2774,6 @@ body.loaded .preloader {
 .questions__wrapper {
   background-color: #fef2f6;
   padding: 2.5rem 0;
- 
 }
 
 .questions .section-heading {
@@ -2898,7 +2896,6 @@ body.loaded .preloader {
   margin-top: -7.5rem;
 }
 @media (min-width: 992px) {
- 
 }
 @media (max-width: 991.98px) {
   .questions-img {
@@ -2989,7 +2986,7 @@ body.loaded .preloader {
   text-align: center;
   margin-bottom: 4rem;
   width: 100%;
-  color: #F3036A;
+  color: #f3036a;
 }
 .pricing__single {
   padding: 4.5rem 0 2.3rem 0;
@@ -3627,11 +3624,11 @@ body.loaded .preloader {
   flex-direction: column;
   padding: 10vh 5vw;
   gap: 2.5vh;
- background-color: #f0f7fc;
+  background-color: #f0f7fc;
 }
 
 .features-heading {
-  color: #F3036A;
+  color: #f3036a;
   margin-top: 2rem;
   font-size: 4rem;
   font-weight: bold;
@@ -3876,9 +3873,9 @@ body.loaded .preloader {
   }
 }
 
-.contact .section-heading{
+.contact .section-heading {
   text-align: center;
-  color: #F3036A;
+  color: #f3036a;
   width: 100%;
   margin-top: 5rem;
 }
@@ -3894,7 +3891,7 @@ body.loaded .preloader {
 .info-section {
   width: 50%;
   padding: 40px;
-  background: linear-gradient(135deg, #D9EEFF, #B3DAFF);
+  background: linear-gradient(135deg, #d9eeff, #b3daff);
 }
 .info-section h2 {
   color: #0056b3;
@@ -3921,9 +3918,9 @@ body.loaded .preloader {
   width: 100%;
   padding: 12px;
   margin: 10px 0;
-  border: 2px solid #007BFF;
+  border: 2px solid #007bff;
   border-radius: 6px;
-  background: #F8FCFF;
+  background: #f8fcff;
   color: #333;
   outline: none;
   font-size: 16px;
@@ -3939,10 +3936,10 @@ body.loaded .preloader {
 .submit-btn {
   width: 100%;
   padding: 12px;
-  background: linear-gradient(90deg, #007BFF, #0056b3);
+  background: linear-gradient(90deg, #007bff, #0056b3);
   border: none;
   border-radius: 6px;
-  color: #FFF;
+  color: #fff;
   font-size: 18px;
   cursor: pointer;
   transition: 0.3s;
@@ -3956,19 +3953,17 @@ body.loaded .preloader {
     flex-direction: column;
   }
 
-  .contact .info-section, .contact-form{
+  .contact .info-section,
+  .contact-form {
     width: 100%;
   }
 }
 
-
-
-
-.pilot{
+.pilot {
   padding: 20px;
 }
 .pilot-section {
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 24px;
   box-shadow: 0px 8px 25px rgba(128, 0, 255, 0.2);
   padding: 40px;
@@ -4012,15 +4007,15 @@ body.loaded .preloader {
   min-width: 300px;
 }
 .pilot-box {
-  background: #F8F9FF;
+  background: #f8f9ff;
   padding: 20px;
   border-radius: 12px;
   text-align: center;
   box-shadow: 0px 4px 10px rgba(128, 0, 255, 0.15);
-  border: 2px solid #7D5FFF;
+  border: 2px solid #7d5fff;
 }
 .pilot-box h3 {
-  color: #7D5FFF;
+  color: #7d5fff;
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 5px;
@@ -4030,7 +4025,8 @@ body.loaded .preloader {
   font-size: 14px;
 }
 
-.pilot .button__wrapper a,.pilot .button__wrapper i{
+.pilot .button__wrapper a,
+.pilot .button__wrapper i {
   color: black;
 }
 
@@ -4045,7 +4041,7 @@ body.loaded .preloader {
     margin-top: 2rem;
   }
 
-  .pilot-box{
+  .pilot-box {
     padding: 5px;
   }
 }
