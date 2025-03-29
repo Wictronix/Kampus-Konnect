@@ -53,8 +53,7 @@ ul {
 .section-heading {
   font-weight: 600;
   font-size: 6rem;
-  width: 68%;
-  line-height: -4rem;
+  width: 85%;
 }
 @media (max-width: 991.98px) {
   .section-heading {
@@ -66,8 +65,8 @@ ul {
 }
 @media (max-width: 575.98px) {
   .section-heading {
-    font-size: 4rem;
-    width: 90%;
+    font-size: 3.5rem;
+    width: 100%;
   }
 }
 .color-black {
@@ -1643,7 +1642,7 @@ body.loaded .preloader {
 }
 .hero__wrapper {
   width: 100%;
-  padding: 5rem 0 0 0;
+  padding: 10rem 0 0 0;
 }
 .hero .main-heading {
   font-size: 8rem;
@@ -1851,7 +1850,7 @@ body.loaded .preloader {
 }
 @media (max-width: 500px) {
   .hero__wrapper {
-    padding: 0;
+    padding-top:8rem;
   }
   .hero .download-buttons {
     flex-direction: column;
@@ -2218,7 +2217,7 @@ body.loaded .preloader {
 }
 .growth .section-heading {
   text-align: center;
-  margin: 0 auto 5rem auto;
+  margin: auto;
   color: #F3036A;
 }
 .growth__box {
@@ -3175,8 +3174,9 @@ body.loaded .preloader {
 }
 @media (max-width: 991.98px) {
   .pricing .section-heading {
-    width: 75%;
-    margin-bottom: 5rem;
+    width: 100%;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
   }
   .pricing__wrapper {
     padding: 5rem 2rem;
@@ -3583,6 +3583,10 @@ body.loaded .preloader {
   color: #707577;
 }
 @media (max-width: 991.98px) {
+.footer{
+  margin-bottom: 0;
+}
+
   .footer__content-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3590,9 +3594,7 @@ body.loaded .preloader {
     flex-direction: column;
   }
   .footer__wrapper {
-    width: calc(100% - 5rem);
     text-align: center;
-    padding: 10rem 0 5rem 0;
   }
   .footer__info--content .paragraph {
     margin: 0 auto 3rem auto;
@@ -3975,9 +3977,9 @@ body.loaded .preloader {
   overflow: hidden;
 }
 .pilot-header {
-  font-size: 28px;
+  font-size: 4rem;
   font-weight: 700;
-  color: black;
+  color: #F3036A;
   text-transform: uppercase;
 }
 .pilot-content {
