@@ -28,7 +28,12 @@
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
 
     <!--stylesheet-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+    <!--<link rel="stylesheet" href="assets/css/bootstrap.min.css" />-->
     <link rel="stylesheet" href="assets/css/all.min.css" />
     <!--<link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />-->
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -37,7 +42,13 @@
   <body>
     <!--preloader start-->
     <div class="preloader">
-      <img src="assets/images/logo.webp" alt="preloader-logo" width="750" />
+      <img
+        src="assets/images/logo.webp"
+        alt="preloader-logo"
+        width="750"
+        height="208"
+        style="background-color: white"
+      />
     </div>
     <!--preloader end-->
     <!--header section start-->
@@ -50,6 +61,8 @@
                 src="assets/images/logo-2.webp"
                 alt="header-logo"
                 width="275"
+                height="37"
+                loading="lazy"
               />
             </a>
           </div>
@@ -111,6 +124,7 @@
                   src="assets/images/home.webp"
                   alt="hero-home"
                   height="650"
+                  width="316"
                 />
               </div>
             </div>
@@ -367,7 +381,7 @@
           </div>
           <div class="pilot-stats">
             <div class="pilot-box">
-              <h3>49000+</h3>
+              <h3>800+</h3>
               <p>Students Enrolled</p>
             </div>
             <div class="pilot-box">
@@ -634,21 +648,36 @@
             <div class="col-lg-4">
               <div class="step__box">
                 <div class="content">
-                  <img src="/assets/images/screen-1.webp" alt="step-1" />
+                  <img
+                    src="/assets/images/screen-1.webp"
+                    alt="step-1"
+                    width="1080"
+                    height="1080"
+                  />
                 </div>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="step__box">
                 <div class="content">
-                  <img src="/assets/images/screen-2.webp" alt="step-2" />
+                  <img
+                    src="/assets/images/screen-2.webp"
+                    alt="step-2"
+                    width="1080"
+                    height="1080"
+                  />
                 </div>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="step__box">
                 <div class="content">
-                  <img src="/assets/images/screen-3.webp" alt="step-3" />
+                  <img
+                    src="/assets/images/screen-3.webp"
+                    alt="step-3"
+                    width="1080"
+                    height="1080"
+                  />
                 </div>
               </div>
             </div>
@@ -656,13 +685,31 @@
           <div class="step-carousel">
             <div class="step-carousel__track">
               <div class="step__box_small">
-                <img class="content" src="/assets/images/screen-1.webp" />
+                <img
+                  class="content"
+                  src="/assets/images/screen-1.webp"
+                  alt="step-1-small"
+                  width="360"
+                  height="360"
+                />
               </div>
               <div class="step__box_small">
-                <img class="content" src="/assets/images/screen-2.webp" />
+                <img
+                  class="content"
+                  src="/assets/images/screen-2.webp"
+                  alt="step-2-small"
+                  width="360"
+                  height="360"
+                />
               </div>
               <div class="step__box_small">
-                <img class="content" src="/assets/images/screen-3.webp" />
+                <img
+                  class="content"
+                  src="/assets/images/screen-3.webp"
+                  alt="step-3-small"
+                  width="360"
+                  height="360"
+                />
               </div>
             </div>
             <button class="step-carousel__button prev">&#10094;</button>
@@ -897,7 +944,9 @@
                 <img
                   src="assets/images/faq.webp"
                   alt="faq-image"
-                  height="700"
+                  height="820"
+                  width="250"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -1138,29 +1187,36 @@
         </div>
         <div class="contact-form">
           <h2>Let's Connect</h2>
-          <form>
+          <form
+            method="POST"
+            action="https://nocodeform.io/f/67ffcba930960c55e829151a"
+          >
             <input
               type="text"
               class="input-field"
               placeholder="Name"
+              name="name"
               required
             />
             <input
               type="email"
               class="input-field"
               placeholder="Email"
+              name="email"
               required
             />
             <input
               type="text"
               class="input-field"
               placeholder="Mobile No."
+              name="mobile no."
               required
             />
             <input
               type="text"
               class="input-field"
               placeholder="Institute Name"
+              name="institute"
               required
             />
             <button type="submit" class="submit-btn">Submit</button>
@@ -1180,8 +1236,10 @@
                 <div class="footer__info--logo">
                   <img
                     src="assets/images/logo-2.webp"
-                    alt="image"
+                    alt="logo-small"
                     width="300"
+                    height="41"
+                    loading="lazy"
                   />
                 </div>
                 <div class="footer__info--content">
@@ -1232,9 +1290,21 @@
     </footer>
     <!--footer end-->
 
-    <script src="assets/js/jquery-3.4.1.min.js"></script>
-    <script src="assets/js/popper-1.16.0.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <!--<script src="assets/js/jquery-3.4.1.min.js"></script>-->
+    <!--<script src="assets/js/popper-1.16.0.min.js"></script>-->
+    <!--<script src="assets/js/bootstrap.min.js"></script>-->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"
+      crossorigin="anonymous"
+    ></script>
     <script>
       $(window).on("load", function () {
         $("body").addClass("loaded");

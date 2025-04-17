@@ -39,37 +39,37 @@ $(".header .header__bars").on("click", function () {
 });
 
 $(".header .header__nav span").on("click", function () {
-	var selector = $(".header .header__nav");
+  var selector = $(".header .header__nav");
 
-	selector.css("right", "100%");
-	selector.removeClass("shown");
+  selector.css("right", "100%");
+  selector.removeClass("shown");
 });
 
 // Close the mobile nav when clicking on a link
 $(".header .header__nav a").on("click", function () {
-	var selector = $(".header .header__nav");
+  var selector = $(".header .header__nav");
 
-	selector.css("right", "100%");
-	selector.removeClass("shown");
+  selector.css("right", "100%");
+  selector.removeClass("shown");
 });
 
 $(document).on("click", 'a[href^="#"]', function (event) {
-	event.preventDefault();
-	let elementId = $(event.target).attr("href");
-	if (elementId == "#") return;
+  event.preventDefault();
+  let elementId = $(event.target).attr("href");
+  if (elementId == "#") return;
 
-	$("html, body").animate(
-		{
-			scrollTop: $($.attr(this, "href")).offset().top,
-		},
-		1000,
-		"swing"
-	);
+  $("html, body").animate(
+    {
+      scrollTop: $($.attr(this, "href")).offset().top,
+    },
+    1000,
+    "swing"
+  );
 
-	// Close the mobile menu after clicking a link
-	var selector = $(".header .header__nav");
-	selector.css("right", "100%");
-	selector.removeClass("shown");
+  // Close the mobile menu after clicking a link
+  var selector = $(".header .header__nav");
+  selector.css("right", "100%");
+  selector.removeClass("shown");
 });
 
 $(window).on("scroll", () => {
@@ -80,7 +80,6 @@ $(window).on("scroll", () => {
     $(".header-1").addClass("fixed").css({ bottom: "unset", top: "0" });
   }
 });
-
 
 /********************
 testimonial
@@ -326,7 +325,6 @@ function slidestep() {
   const totalSlides = slides.length;
   let index = 1;
 
-  // Clone first and last slides for infinite effect
   const firstClone = slides[0].cloneNode(true);
   const lastClone = slides[totalSlides - 1].cloneNode(true);
 
@@ -355,7 +353,7 @@ function slidestep() {
       }, 500);
     }
   }
-  setInterval(nextSlide, 2000);
+  setInterval(nextSlide, 5000);
 
   nextButton.addEventListener("click", function () {
     if (index >= allSlides.length - 1) return;
